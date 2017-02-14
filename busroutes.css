@@ -1,0 +1,32 @@
+div#controlpanel{
+	height: 100%;
+	width: 20%;
+	float: left;
+	display: inline-block;
+}
+
+div#googlemap{
+	height: 100%;
+	width: 80%;
+	float: right;
+	display: inline-block;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+.toggles {
+    width: 100%;
+}
+#busroutes > fieldset > label {
+	font-size: 0.7em;
+}
+
+#busroutes{
+    display: inline-block;
+    vertical-align: top;
+}
+
