@@ -123,24 +123,43 @@ function useTheData(doc){
 }
 function createControlPanel(){
 	
-	var buspanel = $('div.toggles');
+	var buspanel = $('ul.dropdown-list');
 	buspanel.controlgroup( {
 		direction: "vertical"
 	});
 	for(var i=0;i<routes.length;i++){
-		buspanel.append("<label for='checkbox-"+routes[i].line_num+"'>"+routes[i].name+"<input type='checkbox'  class='toggle' name='checkbox-"+routes[i].line_num+"' id='checkbox-"+routes[i].line_num+"' value='"+routes[i].line_num+"' checked> </label>")
-		
+		buspanel.append("<li><label for='checkbox-"+routes[i].line_num+"'>"+routes[i].name+"<input type='checkbox'  class='toggle is_selected' name='checkbox-"+routes[i].line_num+"' id='checkbox-"+routes[i].line_num+"' value='"+routes[i].line_num+"' checked='true'> </label></li>");
 	}
-	$('input').checkboxradio();
+	//$('input').checkboxradio();
 	$(".toggle").on("change", handleToggle );
 }
-
+$(function () {
+	$("div#accordion").on('click', function(){
+		$(this).toggleClass("is-active");
+	}).children('input').on('click', function (e){
+		e.stopPropagation()
+	});
+	$("div#accordion ul").click(function (e) {
+		e.stopPropagation();
+	});
+	$("#checkbox-buses").on("click", handleBusToggle);
+});
+function handleBusToggle( e ){
+	var box = $("#checkbox-buses");
+	if(box.prop('checked')){
+		$('.toggle').prop("checked", true);
+		$('.toggle').trigger('change');
+	}else{
+		$('.toggle').prop("checked", false);
+		$('.toggle').trigger('change');
+	}
+}
 
 function handleToggle( e ){
 	var target = $(e.target);
 	var val = target.val();
 	var line = $.grep(routelines, function(e){ return e.routenum == val });
-	if(target.parent().hasClass('ui-checkboxradio-checked')){
+	if(target.prop('checked')){
 		line[0].polyline.setVisible(true);
 	} else {
 		line[0].polyline.setVisible(false);

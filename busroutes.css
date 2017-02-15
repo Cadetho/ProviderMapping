@@ -18,9 +18,7 @@ body{
 	margin: 0;
 }
 
-.toggles {
-    width: 100%;
-}
+
 #busroutes > fieldset > label {
 	font-size: 0.7em;
 }
@@ -29,4 +27,70 @@ body{
     display: inline-block;
     vertical-align: top;
 }
+div#accordion {
+	width: 100%;
+	border-bottom: 1px solid silver;
+	cursor: pointer;
+	position: relative;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div#accordion:after{
+	content: '';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border: 6px solid transparent;
+	border-top-color: #000;
+	top:50%;
+	right: 10px;
+	margin-top: -3px;
+}
 
+div#accordion.is-active:after{
+	border-bottom-color:#000;
+	border-top-color: #fff;
+	margin-top: -9px;
+}
+.dropdown-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:100%;
+	border: inherit;
+	border-top: none;
+	left:-1px;
+	right:-1px;
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    pointer-events: none;
+}	
+.is-active .dropdown-list {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.dropdown-list li label {
+	display: block;
+	border-bottom: 1px solid silver;
+	padding: 10px;
+	-webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.dropdown-list li label:hover{
+	background-color: #c41230;
+	color: white;
+}
