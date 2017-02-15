@@ -1,4 +1,5 @@
 var routelines = [];
+var tracts = [];
 var map = null;
 var colors = [
 	"#00ffff",
@@ -89,21 +90,37 @@ function initMap (){
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend'));
 	
-	var censustractLayer = new google.maps.FusionTablesLayer({
+/* 	var censustractLayer = new google.maps.FusionTablesLayer({
 		query: {
 			select: 'col2',
 			from: '1_1Jss1Za8MvCaAhC2FDIZRL8qisgx12hqs21oq3B'
 		}
 	});
 	censustractLayer.setMap(map);
+	 */
+	/* var tractslayer = new google.maps.KmlLayer({
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/cb_2015_22_tract_500k.kml',
+		map: map
+	});
+	 console.log(tractslayer); */
+	 
+	var myParser = new geoXML3.parser({
+		map: map,
+		afterParse: useTheData
+		});
+	myParser.parse('https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/cb_2015_22_tract_500k.kml');
 	
 	showBusRoutes();
-	console.log(routelines);
 	createControlPanel();
 	
 
 }
-
+function useTheData(doc){
+	for(var i=0;i<doc[0].gpolygons.length;i++){
+		tracts.push(doc[0].gpolygons[i]);
+	}
+	console.log(tracts);
+}
 function createControlPanel(){
 	
 	var buspanel = $('div.toggles');
