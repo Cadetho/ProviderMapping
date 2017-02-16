@@ -134,7 +134,6 @@ function useCSVData(data){
 	}
 	datalist = data[0];
 	data.shift();
-	console.log(data);
 	for(i=0;i<data.length;i++){
 		for(a=2;a<data[i].length;a++){
 			data[i][a]=parseInt(data[i][a]);
@@ -142,13 +141,13 @@ function useCSVData(data){
 	}
 	for(i=0;i<data.length;i++){
 		if(data[i][2]<=7){
-			
+			console.log(data[i][0]);
 			var index = tracts.findIndex(x => x.title == data[i][0]);
 			console.log(index);
-			healthdistricts[data[i][2]-1].push(tracts[i]);
+			healthdistricts[data[i][2]-1].push(tracts[index]);
 		}
 	}
-	console.log(tracts);
+	console.log(healthdistricts);
 }
 function useTheData(doc){
 	for(var i=0;i<doc[0].gpolygons.length;i++){
@@ -200,16 +199,14 @@ function handleDistrictToggle( e ){
 }
 function setTractFill(colorfill){
 	for(i=0;i<tracts.length-1;i++){
-		tracts[i].fillColor=colorfill[i];
-		tracts[i].strokeWeight = '2';
+		tracts[i].setOptions({fillColor:colorfill[i], strokeWeight:'2'});
 	}
 }
 function setDistrictFill(colorfill){
 	console.log(healthdistricts);
 	for(i=0;i<healthdistricts.length-1;i++){
 		for(a=0;a<healthdistricts[i].length-1;a++){
-			healthdistricts[i][a].fillColor=colorfill[i];
-			healthdistricts[i][a].strokeWeight = '0';
+			healthdistricts[i][a].setOptions({fillColor: colorfill[i], strokeWeight: '0'});
 		}
 	}
 }
