@@ -109,17 +109,31 @@ function initMap (){
 		afterParse: useTheData
 		});
 	myParser.parse('https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/cb_2015_22_tract_500k.kml');
-	
 	showBusRoutes();
 	createControlPanel();
-	
+	var csvdata=$.ajax({
+		type: 'GET',
+		url: 'SubdistrictAnalysis.csv',
+		dataType: 'text/csv',
+		success: function(result){
+			console.log(result);
+		}
+	});
 
 }
 function useTheData(doc){
 	for(var i=0;i<doc[0].gpolygons.length;i++){
 		tracts.push(doc[0].gpolygons[i]);
 	}
-	console.log(tracts);
+}
+
+function getRangeColor(percent){
+	var h = percent*0.4; //hue
+	var s = 0.9;  //saturation
+	var l = 0.9; //lightness
+	
+	return {hue: h, sat: s, light: l};
+
 }
 function createControlPanel(){
 	
