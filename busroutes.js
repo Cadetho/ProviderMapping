@@ -113,10 +113,14 @@ function initMap (){
 	createControlPanel();
 	var csvdata=$.ajax({
 		type: 'GET',
-		url: 'SubdistrictAnalysis.csv',
-		dataType: 'text/csv',
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/SubdistrictAnalysis.csv',
+		dataType: 'text',
 		success: function(result){
+			var result = result.split(/\r?\n|\r/);
 			console.log(result);
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+			console.log("Status: " + xhr.status + "     Error: " + thrownError);
 		}
 	});
 
