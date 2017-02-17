@@ -1,6 +1,12 @@
 var routelines = [];
 var tracts = [];
 var map = null;
+var accordheight;
+var accordheight2;
+var datalist = [];
+var csvdata = [];
+var healthdistricts = [{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []}];
+var healthdistrictspop = [0,0,0,0,0,0,0];
 var colors = [
 	"#00ffff",
     "#f0ffff",
@@ -120,13 +126,11 @@ function initMap (){
 			useCSVData(result);
 		},
 		error: function (xhr, ajaxOptions, thrownError) {
-			console.log("Status: " + xhr.status + "     Error: " + thrownError);
 		}
 	});
 
 }
-var datalist = [];
-var healthdistricts = [[],[],[],[],[],[],[]];
+
 function useCSVData(data){
 	data.pop();
 	for(i=0;i<data.length;i++){
@@ -139,22 +143,83 @@ function useCSVData(data){
 			data[i][a]=parseInt(data[i][a]);
 		}
 	}
+	csvdata = data;
+	console.log(data[0]);
 	for(i=0;i<data.length;i++){
 		if(data[i][2]<=7){
-			console.log(data[i][0]);
 			var index = tracts.findIndex(x => x.title == data[i][0]);
-			console.log(index);
-			healthdistricts[data[i][2]-1].push(tracts[index]);
+			healthdistricts[data[i][2]-1].tracts.push(tracts[index]);
+			healthdistricts[data[i][2]-1].pop = healthdistricts[data[i][2]-1].pop + parseInt(data[i][3]);
+			for(var j=4;j< data[i].length-2 ;j++){
+				if(healthdistricts[data[i][2]-1].datatotals[j]==='undefined'){
+					if(datalist[j-4].indexOf("%")!=-1){
+						healthdistricts[data[i][2]-1].datatotals.push(parseInt(data[i][j]));
+					} else {
+						healthdistricts[data[i][2]-1].datatotals.push((parseInt(data[i][j])/100)*parseInt(data[i][3]));
+					}
+				} else {
+					if(datalist[j-4].indexOf("%")!=-1){
+						healthdistricts[data[i][2]-1].datatotals[j]=healthdistricts[data[i][2]-1].datatotals[j]+parseInt(data[i][j]);
+					} else {
+						healthdistricts[data[i][2]-1].datatotals[j]=healthdistricts[data[i][2]-1].datatotals[j]+parseInt((parseInt(data[i][j])/100)*parseInt(data[i][3]));
+					}
+				}
+			}
 		}
 	}
-	console.log(healthdistricts);
+	$("#checkbox-districts").prop("checked", false);
+	$("#checkbox-districts").on("click", handleDistrictToggle);
+	$('#district-box').show();
+	createCSVDataControls();
+}
+function createCSVDataControls(){
+	datalist = datalist.slice(3);
+	accordheight2 = $('div#accordion2').height();
+	var csvpanel = $('div#accordion2 > ul');
+	
+	$('div#accordion2').height(accordheight2);
+	for(var i=1;i<datalist.length;i++){
+		csvpanel.append("<label for='radio-"+ i +"'>"+datalist[i]+"</label><input type='radio'  class='toggle_csv' name='radiocsv' id='radio-"+i+"' value='"+i+"' > ");
+	}
+	$("[name='radiocsv']").on("change", handleCSVToggle );
+	$('#csv > li > .input').checkboxradio();
+	$('div#accordion2').controlgroup( {
+		direction: "vertical"
+	});
+	
+	
+}
+function handleCSVToggle( e ){
+	var index = e.target.value;
+	var districtbool = $('#checkbox-districts').prop('checked');
+	var colorarr = [];
+	if(districtbool){
+		for(i=0;i<healthdistricts.length;i++){
+			colorarr.push(healthdistricts.datatotals[i]/healthdistricts.pop);
+		}
+		setDistrictFill(colorarr);
+	} else {
+		if(datalist[index].indexOf("%")==-1){
+			for(i=0;i<data.length;i++){
+				colorarr.push(data[i][index]/data[i][3]);
+			}	
+		} else {
+			for(i=0;i<data.length;i++){
+				colorarr.push((data[i][index]));
+			}
+		}
+	}
+	for(z=0;z<colorarr.length;z++){
+		colorarr[z]=getRangeColor(colorarr[z]);
+	}
+	console.log(colorarr);
 }
 function useTheData(doc){
 	for(var i=0;i<doc[0].gpolygons.length;i++){
 		tracts.push(doc[0].gpolygons[i]);
+		doc[0].gpolygons[i].setOptions({fillColor: colors[i]});
 	}
 }
-
 function getRangeColor(percent){
 	var h = percent*0.4; //hue
 	var s = 0.9;  //saturation
@@ -164,11 +229,12 @@ function getRangeColor(percent){
 
 }
 function createControlPanel(){
-	
-	var buspanel = $('ul.dropdown-list');
+	accordheight = $('div#accordion').height();
+	var buspanel = $('div#accordion > ul.dropdown-list');
 	buspanel.controlgroup( {
 		direction: "vertical"
 	});
+	$('div#accordion').height(accordheight);
 	for(var i=0;i<routes.length;i++){
 		buspanel.append("<li><label for='checkbox-"+routes[i].line_num+"'>"+routes[i].name+"<input type='checkbox'  class='toggle is_selected' name='checkbox-"+routes[i].line_num+"' id='checkbox-"+routes[i].line_num+"' value='"+routes[i].line_num+"' checked='true'> </label></li>");
 	}
@@ -178,19 +244,36 @@ function createControlPanel(){
 $(function () {
 	$("div#accordion").on('click', function(){
 		$(this).toggleClass("is-active");
+		if($(this).hasClass('is-active')){
+			$('#accordion').height($('div#accordion > ul.dropdown-list').height() + $('#accordion').height());
+		}else{
+			$('#accordion').height(accordheight);
+		}
 	}).children('input').on('click', function (e){
 		e.stopPropagation()
 	});
 	$("div#accordion ul").click(function (e) {
 		e.stopPropagation();
 	});
+	
+	$("div#accordion2").on('click', function(){
+		$(this).toggleClass("is-active");
+		if($(this).hasClass('is-active')){
+			$('#accordion2').height($('div#accordion2 > ul.dropdown-list').height() + $('#accordion2').height());
+		}else{
+			$('#accordion2').height(accordheight);
+		}
+	}).children('input').on('click', function (e){
+		e.stopPropagation()
+	});
+	$("div#accordion2 ul").click(function (e) {
+		e.stopPropagation();
+	});
 	$("#checkbox-buses").on("click", handleBusToggle);
 	
-	$("#checkbox-districts").on("click", handleDistrictToggle);
+	
 });
-
 function handleDistrictToggle( e ){
-	console.log($('#checkbox-districts').prop('checked'));
 	if($('#checkbox-districts').prop('checked')){
 		setDistrictFill(colors);
 	} else {
@@ -198,15 +281,15 @@ function handleDistrictToggle( e ){
 	}
 }
 function setTractFill(colorfill){
-	for(i=0;i<tracts.length-1;i++){
+	for(i=0;i<tracts.length;i++){
 		tracts[i].setOptions({fillColor:colorfill[i], strokeWeight:'2'});
 	}
 }
 function setDistrictFill(colorfill){
-	console.log(healthdistricts);
-	for(i=0;i<healthdistricts.length-1;i++){
-		for(a=0;a<healthdistricts[i].length-1;a++){
-			healthdistricts[i][a].setOptions({fillColor: colorfill[i], strokeWeight: '0'});
+	for(i=0;i<healthdistricts.tracts.length;i++){
+		for(a=0;a<healthdistricts.tracts[i].length;a++){
+			
+			healthdistricts.tracts[i][a].setOptions({fillColor: colorfill[i], strokeWeight: '0'});
 		}
 	}
 }
@@ -216,11 +299,11 @@ function handleBusToggle( e ){
 		$('.toggle').prop("checked", true);
 		$('.toggle').trigger('change');
 	}else{
+		
 		$('.toggle').prop("checked", false);
 		$('.toggle').trigger('change');
 	}
 }
-
 function handleToggle( e ){
 	var target = $(e.target);
 	var val = target.val();
@@ -246,7 +329,6 @@ function httpGetAsync(url, callback, options){
 	xmlHttp.open("GET", url, true);
 	xmlHttp.send(null);
 }
-
 function displayroute(routeresp, routeobj){
 	p_route = routeResponseParse(routeresp);
 	var pline = new google.maps.Polyline({
@@ -258,7 +340,6 @@ function displayroute(routeresp, routeobj){
 	routelines.push({polyline: pline, routenum: routeobj.line_num, routename: routeobj.name});
 	pline.setMap(map);
 }
-
  function routeResponseParse(route){
 	var geoindex = 0;
 	for(j=0;j<route.rows.length;j++){

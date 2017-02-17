@@ -3,6 +3,7 @@ div#controlpanel{
 	width: 20%;
 	float: left;
 	display: inline-block;
+	overflow: auto;
 }
 
 div#googlemap{
@@ -27,7 +28,7 @@ body{
     display: inline-block;
     vertical-align: top;
 }
-div#accordion {
+div.accordion {
 	width: 100%;
 	border-bottom: 1px solid silver;
 	cursor: pointer;
@@ -39,7 +40,7 @@ div#accordion {
     -ms-user-select: none;
     user-select: none;
 }
-div#accordion:after{
+div.accordion:after{
 	content: '';
 	height: 0;
 	position: absolute;
@@ -51,7 +52,7 @@ div#accordion:after{
 	margin-top: -3px;
 }
 
-div#accordion.is-active:after{
+div.accordion.is-active:after{
 	border-bottom-color:#000;
 	border-top-color: #fff;
 	margin-top: -9px;
@@ -60,7 +61,6 @@ div#accordion.is-active:after{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	position: absolute;
 	top:100%;
 	border: inherit;
 	border-top: none;
