@@ -144,13 +144,12 @@ function useCSVData(data){
 		}
 	}
 	csvdata = data;
-	console.log(data[0]);
 	for(i=0;i<data.length;i++){
 		if(data[i][2]<=7){
 			var index = tracts.findIndex(x => x.title == data[i][0]);
 			healthdistricts[data[i][2]-1].tracts.push(tracts[index]);
 			healthdistricts[data[i][2]-1].pop = healthdistricts[data[i][2]-1].pop + parseInt(data[i][3]);
-			for(var j=4;j< data[i].length-2 ;j++){
+			for(var j=4;j< data[i].length ;j++){
 				if(healthdistricts[data[i][2]-1].datatotals[j]==='undefined'){
 					if(datalist[j-4].indexOf("%")!=-1){
 						healthdistricts[data[i][2]-1].datatotals.push(parseInt(data[i][j]));
@@ -178,8 +177,8 @@ function createCSVDataControls(){
 	var csvpanel = $('div#accordion2 > ul');
 	
 	$('div#accordion2').height(accordheight2);
-	for(var i=1;i<datalist.length;i++){
-		csvpanel.append("<label for='radio-"+ i +"'>"+datalist[i]+"</label><input type='radio'  class='toggle_csv' name='radiocsv' id='radio-"+i+"' value='"+i+"' > ");
+	for(var i=4;i<datalist.length+3;i++){
+		csvpanel.append("<label for='radio-"+ i +"'>"+datalist[i-3]+"</label><input type='radio'  class='toggle_csv' name='radiocsv' id='radio-"+i+"' value='"+i+"' > ");
 	}
 	$("[name='radiocsv']").on("change", handleCSVToggle );
 	$('#csv > li > .input').checkboxradio();
@@ -200,19 +199,32 @@ function handleCSVToggle( e ){
 		setDistrictFill(colorarr);
 	} else {
 		if(datalist[index].indexOf("%")==-1){
-			for(i=0;i<data.length;i++){
-				colorarr.push(data[i][index]/data[i][3]);
+			for(i=0;i<csvdata.length;i++){
+				colorarr.push(csvdata[i][index]/csvdata[i][3]);
 			}	
 		} else {
-			for(i=0;i<data.length;i++){
-				colorarr.push((data[i][index]));
+			for(i=0;i<csvdata.length;i++){
+				colorarr.push((csvdata[i][index]));
 			}
 		}
 	}
-	for(z=0;z<colorarr.length;z++){
-		colorarr[z]=getRangeColor(colorarr[z]);
+
+	var max = Math.max.apply(null, colorarr);
+	for(i=0;i<colorarr.length;i++){
+		colorarr[i]=colorarr[i]/max;
+		colorarr[i]=getRangeColor(colorarr[i]);
+		colorarr[i]="hsl("+colorarr[i].hue + ","+colorarr[i].sat+"%,"+colorarr[i].light+"%)";
 	}
 	console.log(colorarr);
+	if(districtbool){
+		setDistrictFill(colorarr);
+	} else {
+		setTractFill(colorarr);
+	}
+	/* for(z=0;z<colorarr.length;z++){
+		colorarr[z]=getRangeColor(colorarr[z]);
+	} */
+	
 }
 function useTheData(doc){
 	for(var i=0;i<doc[0].gpolygons.length;i++){
@@ -221,9 +233,9 @@ function useTheData(doc){
 	}
 }
 function getRangeColor(percent){
-	var h = percent*0.4; //hue
-	var s = 0.9;  //saturation
-	var l = 0.9; //lightness
+	var h = percent*180; //hue
+	var s = 90;  //saturation
+	var l = 50; //lightness
 	
 	return {hue: h, sat: s, light: l};
 
@@ -284,12 +296,13 @@ function setTractFill(colorfill){
 	for(i=0;i<tracts.length;i++){
 		tracts[i].setOptions({fillColor:colorfill[i], strokeWeight:'2'});
 	}
+	console.log(tracts);
 }
 function setDistrictFill(colorfill){
-	for(i=0;i<healthdistricts.tracts.length;i++){
-		for(a=0;a<healthdistricts.tracts[i].length;a++){
+	for(i=0;i<healthdistricts.length;i++){
+		for(a=0;a<healthdistricts[i].tracts.length;a++){
 			
-			healthdistricts.tracts[i][a].setOptions({fillColor: colorfill[i], strokeWeight: '0'});
+			healthdistricts[i].tracts[a].setOptions({fillColor: colorfill[i], strokeWeight: '0'});
 		}
 	}
 }
