@@ -1,10 +1,14 @@
 var routelines = [];
 var tracts = [];
+var provdata = [];
+var specialtylist = [];
 var map = null;
 var accordheight;
 var accordheight2;
 var datalist = [];
+var provdatalist = [];
 var csvdata = [];
+var openinfo = null;
 var healthdistricts = [{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []}];
 var healthdistrictspop = [0,0,0,0,0,0,0];
 var colors = [
@@ -95,21 +99,7 @@ function initMap (){
     });
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend'));
-	
-/* 	var censustractLayer = new google.maps.FusionTablesLayer({
-		query: {
-			select: 'col2',
-			from: '1_1Jss1Za8MvCaAhC2FDIZRL8qisgx12hqs21oq3B'
-		}
-	});
-	censustractLayer.setMap(map);
-	 */
-	/* var tractslayer = new google.maps.KmlLayer({
-		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/cb_2015_22_tract_500k.kml',
-		map: map
-	});
-	 console.log(tractslayer); */
-	 
+
 	var myParser = new geoXML3.parser({
 		map: map,
 		afterParse: useTheData
@@ -117,30 +107,62 @@ function initMap (){
 	myParser.parse('https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/cb_2015_22_tract_500k.kml');
 	showBusRoutes();
 	createControlPanel();
-	var csvdata=$.ajax({
-		type: 'GET',
-		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/SubdistrictAnalysis.csv',
-		dataType: 'text',
-		success: function(result){
-			var result = result.split(/\r?\n|\r/);
-			useCSVData(result);
-		},
-		error: function (xhr, ajaxOptions, thrownError) {
-		}
-	});
-	var provcsvdata=$.ajax({
-		type: 'GET',
-		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/ProviderDataset.csv',
-		dataType: 'text/csv',
-		success: function(result){
-			var result = result.split(/\r?\n|\r/);
-			useCSVData(result);
-		},
-		error: function (xhr, ajaxOptions, thrownError) {
-		}
-	});
+	
 
 }
+
+function useProvCSVData(data){
+	var provdatalist=data[0].split(',');
+	data.shift();
+	for(i=0;i<data.length;i++){
+		data[i]=data[i].split(',');
+		var specialtyd = data[i][11].split('/');
+		for(j=0;j<specialtyd.length;j++){
+			var specfind = specialtylist.findIndex(x => x.specialty === specialtyd[j]);
+			if(specfind==-1){
+				specialtylist.push({specialty: specialtyd[j], provindexlist: [i]});
+			} else {
+				specialtylist[specfind].provindexlist.push(i);
+			}
+		}
+		provdata.push({lname: data[i][3], fname: data[i][4], specialty: specialtyd, lat: data[i][25], lng: data[i][26], npi: data[i][0], org: data[i][17], marker: "", infowindow: ""});
+	}
+	for(i=0;i<provdata.length;i++){
+ 		for(z=0;z<tracts.length;z++){
+			var lngg = provdata[i].lng;
+			var latt = provdata[i].lat;
+			var pos = new google.maps.LatLng(latt, lngg);
+			var bool = google.maps.geometry.poly.containsLocation(pos, tracts[z].tract);
+			if(bool){
+				tracts[z].providers.push(z);
+			}
+
+		} 
+		var content = "<div class='info_content'><table><tr><td>Name</td><td>"+provdata[i].fname + " " + provdata[i].lname + "</td></tr><td>Specialty</td><td>"+provdata[i].specialty+"</td></tr><tr><td>NPI</td><td>"+provdata[i].npi+"</td></tr><tr><td>Organization</td><td>"+provdata[i].org+"</td></tr></table></div>";
+		
+		provdata[i].infowindow = new google.maps.InfoWindow();
+		provdata[i].marker = new google.maps.Marker({
+			position: {lat: parseFloat(provdata[i].lat), lng: parseFloat(provdata[i].lng)},
+			map: map,
+			title: provdata[i].fname + " " + provdata[i].lname
+		});
+		google.maps.event.addListener(provdata[i].marker, 'click', (function(marker, content,infowindow){
+			return function(){
+				if(openinfo == null){
+					openinfo = infowindow;
+				} else {
+					openinfo.close();
+					openinfo = infowindow;
+				}
+				infowindow.setContent(content);
+				infowindow.open(map,marker);
+			};
+		})(provdata[i].marker, content, provdata[i].infowindow));
+		}
+		
+		console.log(tracts);
+}
+
 
 function useCSVData(data){
 	data.pop();
@@ -157,8 +179,13 @@ function useCSVData(data){
 	csvdata = data;
 	for(i=0;i<data.length;i++){
 		if(data[i][2]<=7){
-			var index = tracts.findIndex(x => x.title == data[i][0]);
-			healthdistricts[data[i][2]-1].tracts.push(tracts[index]);
+			var index = null;
+			for(a=0;a<tracts.length;a++){
+				if(tracts[a].tract.title === data[i][0]){
+					index = a;
+				}
+			}
+			healthdistricts[data[i][2]-1].tracts.push(tracts[index].tract);
 			healthdistricts[data[i][2]-1].pop = healthdistricts[data[i][2]-1].pop + parseInt(data[i][3]);
 			for(var j=4;j< data[i].length ;j++){
 				if(healthdistricts[data[i][2]-1].datatotals[j]==='undefined'){
@@ -226,7 +253,7 @@ function handleCSVToggle( e ){
 		colorarr[i]=getRangeColor(colorarr[i]);
 		colorarr[i]="hsl("+colorarr[i].hue + ","+colorarr[i].sat+"%,"+colorarr[i].light+"%)";
 	}
-	console.log(colorarr);
+
 	if(districtbool){
 		setDistrictFill(colorarr);
 	} else {
@@ -239,9 +266,33 @@ function handleCSVToggle( e ){
 }
 function useTheData(doc){
 	for(var i=0;i<doc[0].gpolygons.length;i++){
-		tracts.push(doc[0].gpolygons[i]);
+		tracts.push({tract: doc[0].gpolygons[i], providers: []});
 		doc[0].gpolygons[i].setOptions({fillColor: colors[i]});
 	}
+	var csvdata=$.ajax({
+		type: 'GET',
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/SubdistrictAnalysis.csv',
+		dataType: 'text',
+		success: function(result){
+			var result = result.split(/\r?\n|\r/);
+			useCSVData(result);
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+		}
+	});
+	var provcsvdata=$.ajax({
+		type: 'GET',
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/ProviderDataset.csv',
+		dataType: 'text',
+		success: function(result){
+			var result = result.split(/\r?\n|\r/);
+			result.pop();
+			useProvCSVData(result);
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+			console.log(thrownError);
+		}
+	});
 }
 function getRangeColor(percent){
 	var h = percent*180; //hue
@@ -305,9 +356,8 @@ function handleDistrictToggle( e ){
 }
 function setTractFill(colorfill){
 	for(i=0;i<tracts.length;i++){
-		tracts[i].setOptions({fillColor:colorfill[i], strokeWeight:'2'});
+		tracts[i].tract.setOptions({fillColor:colorfill[i], strokeWeight:'2'});
 	}
-	console.log(tracts);
 }
 function setDistrictFill(colorfill){
 	for(i=0;i<healthdistricts.length;i++){
