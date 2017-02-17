@@ -128,6 +128,17 @@ function initMap (){
 		error: function (xhr, ajaxOptions, thrownError) {
 		}
 	});
+	var provcsvdata=$.ajax({
+		type: 'GET',
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/ProviderDataset.csv',
+		dataType: 'text/csv',
+		success: function(result){
+			var result = result.split(/\r?\n|\r/);
+			useCSVData(result);
+		},
+		error: function (xhr, ajaxOptions, thrownError) {
+		}
+	});
 
 }
 
