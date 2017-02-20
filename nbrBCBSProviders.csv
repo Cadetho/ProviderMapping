@@ -3,7 +3,7 @@ Facility,Ambulance,East Baton Rouge Parish Emergency Medical Service,70807,East 
 Facility,Emergency Room Physician,C & M Medical Services,70805,East Baton Rouge,BATON ROUGE
 Facility,Emergency Room Physician,C & M Medical Services..,70805,East Baton Rouge,BATON ROUGE
 Facility,Hospital (acute),Champion Medical Center Louisiana Llc,70807,East Baton Rouge,BATON ROUGE
-Facility,Urgent Care Clinic,"Mid City Urgent Care Center, Inc.",70806,East Baton Rouge,BATON ROUGE
+Facility,Urgent Care Clinic,Mid City Urgent Care Center Inc.,70806,East Baton Rouge,BATON ROUGE
 Facility,Urgent Care Clinic,Point Of Care Health Group,70802,East Baton Rouge,BATON ROUGE
 Facility,Urgent Care Clinic,Lsu Health Urgent Care Clinic,70805,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Manipulation Under Anesthesia Musculoskeletal Group,70806,East Baton Rouge,BATON ROUGE
@@ -11,9 +11,9 @@ Provider Group,Clinic/Group,Capitol Clinical And Forsenic Psychiatry Llc,70806,E
 Provider Group,Clinic/Group,Westdale Middle School,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Harbour Orthodontics,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,J E Hargrove Plc,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Gensis Center, Llc",70806,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Gensis Center Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Hospital Medicine Group Llc,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Crna Of Baton Rouge, Llc",70807,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Crna Of Baton Rouge Llc,70807,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,First Choice Surgery Center Of Baton Rouge Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,The Allergy Asthma And Health Clinic Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Chiropractic Spine & Sports Rehab Center,70806,East Baton Rouge,BATON ROUGE
@@ -23,7 +23,7 @@ Provider Group,Clinic/Group,Primary Care Group,70806,East Baton Rouge,BATON ROUG
 Provider Group,Clinic/Group,New Orleans Physicians On Call Inc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Cosmetic Dentistry Of Baton Rouge Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Children With Special Health,70802,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Geaux Champions, Llc",70807,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Geaux Champions Llc,70807,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,E D Bateman Dds A Professional Dental Corp,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Choice Medical Care Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Baton Rouge Mental Health Center,70806,East Baton Rouge,BATON ROUGE
@@ -67,12 +67,12 @@ Provider Group,Clinic/Group,Baton Rouge Speech And Hearing Foundation,70802,East
 Provider Group,Clinic/Group,Valentine Public Health Consultants Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,The Allergy Clinic Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Lc Internal Medicine Clinic Llc,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Anesthesia Of Baton Rouge, Llc",70807,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Anesthesia Of Baton Rouge Llc,70807,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,The Pediatric Clinic,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Addiction Recovery Services,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Baton Rouge Dental Center Inc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Pathology Lab Consultants,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Mayo Health Systems, Inc.",70806,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Mayo Health Systems Inc.,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Chiropractic And Nutrition Clinic,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Baton Rouge General Orthopedic Associates,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Louisiana Center For Eyes,70807,East Baton Rouge,BATON ROUGE
@@ -81,7 +81,7 @@ Provider Group,Clinic/Group,Southwest Ms Anesthesia,70806,East Baton Rouge,BATON
 Provider Group,Clinic/Group,Pediatric Health Associates Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Lagniappe Chiropractic And Wellness,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Vitreoretinal Institute,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Baton Rouge Assist, Llc",70807,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Baton Rouge Assist Llc,70807,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Vinci Oral And Facial Surgery,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,The Caring Clinic Of Louisiana,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Infectious Diseases Consultants Llc,70806,East Baton Rouge,BATON ROUGE
@@ -96,18 +96,18 @@ Provider Group,Clinic/Group,Excelth Family Health Center Rhc - Baton Rouge,70806
 Provider Group,Clinic/Group,Ernest J Mencer Md And Jeffery C Littleton Md,70807,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Acadian Chiropractic & Wellness,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Mastology Center Inc,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Premier South Rehabilitation Services, Llc",70806,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Premier South Rehabilitation Services Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Chiropractic Health Ctr,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Hall, Iii, Augustus A. Dds",70806,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Hall Iii Augustus A. Dds,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Glen Oaks High School Clinic,70812,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Doctor Services, Llc",70807,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Doctor Services Llc,70807,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Medical Wellness Center,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Associates In Plastic And Reconstructive Surgery,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Williamson Eye Center,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Brightside Behavioral Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Fertile Crescent Pediatrics Llc,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Beta Community Services Inc,70806,East Baton Rouge,BATON ROUGE
-Provider Group,Clinic/Group,"Oceans Rog, Llc",70811,East Baton Rouge,BATON ROUGE
+Provider Group,Clinic/Group,Oceans Rog Llc,70811,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Resurrection & New Life Fellowship,70805,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Bayou Physical Medicine,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Mid City Primary Care Center,70806,East Baton Rouge,BATON ROUGE
@@ -115,582 +115,582 @@ Provider Group,Clinic/Group,Baton Rouge Mental Health Center Child Adolescent Se
 Provider Group,Clinic/Group,Oasis Behavioral Health,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Brien Family Dentistry,70806,East Baton Rouge,BATON ROUGE
 Provider Group,Clinic/Group,Baton Rouge Family Medical Center,70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Pezant, Wanda L.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Melker, Clino M.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Jackson-Wilson, Andrea L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Bennett, Danielle K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Gray-Winfrey, Wylea M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Cassano, Ronald L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Delaune, Margaret N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dejean, Rene J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Thomas, Karra D.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Thomas, Karra D.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Harris, Amanda I.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Harris, Amanda I.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Harris, Amanda I.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Hue, Lacey C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Marshall-Brown, Dwone L.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Brignac, Jennifer L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Griffey, Shirley A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Jones, Angela",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dart, William D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Warner, Wanda G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Patterson-Davis, Brittney R.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Patterson-Davis, Brittney R.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Curtis, Judith A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Kyles, Rhea E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Perry, Christy C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Bland, Stacie M.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Bland, Stacie M.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Clary, Hope N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Clary, Hope N.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Clary, Hope N.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Bovard, Kelli S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Guillot, Mary G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Maynard, Catherine M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Keller, Trina M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Johnson, Bridgette S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Lipscomb, Neva W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Brouilette, Robert E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Welton, Debra K.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Welton, Debra K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Montgomery, Laura A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Leblanc, Linda Y.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Leblanc, Linda Y.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Leblanc, Linda Y.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Koons, Chad R.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Smith, Deborah L.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Welch, Clay T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Cormier, Glen",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Britton, Elizabeth N.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Mazza-Ricketts, Mary B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dibble, Kristy L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Davis, Rebecca F.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Monroe, Latonya C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Arboneaux, Benji J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Thompson, Keytha L.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Shepherd, Kay B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Mcguire, Sarah S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Okungbowa, Roland O.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Bridgewater-Doyle, Lois L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Thomas, Lakesha T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Delaughter, Joseph N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Stover, Anissa L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Bell, Dionne F.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Murphy, Christi K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dempsey, Karen C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Robvais, Veronica N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Legendre, Adrianne C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Haik, Chris N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Shriver, Pamela S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Schittone, Amanda T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Easley, Amanda",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Roberts, Tiffany M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Roberts, Tiffany M.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Roberts, Tiffany M.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Olivier, Roumay",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Carroll, Idena M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Jewell, Emily H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Erwin, Dean N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Del Castillo, Nicole M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"David, Lynette B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Honora, Angelia D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Browning, Rhonda N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Stewart, Simone D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Stewart, Simone D.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Stewart, Simone D.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Foster, Wayne D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Zoerner, Christine E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Labatut, Dwayne P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Roscoe, Narkita W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Berggreen, Dana L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dunston, Diana H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dunston, Diana H.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dunston, Diana H.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Harris, Lenore M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Mayeux, Jack J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Cook, Ingrid",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Cook, Ingrid",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Cook, Ingrid",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Landry, Cristel C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Nickens, Joni F.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Rogers, Barbara W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Bly, William",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Mock, Emily G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Ash, Michelle N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"King, Robreka H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Green Perkins, Sheila S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Dauenhauer, Megan M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Sharp, Melanie H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"May, Tadd A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Crawford, Amanda K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Melancon, Bryan N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Schnebelen, Kyle P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Stewart, Andre B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Green, Samaki N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Landry, Alexis P.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Brennan, Christine",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Legnon, Christopher M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Fowler, Leanne H.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Gray, Rachel F.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Gray, Rachel F.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Adv Prac Reg Nurse (aprn),"Gay, James P.",70811,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fusilier, Gregory",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gonzales, Joseph A.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fargason, Donna B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Grizzaffi, Jr., Joseph A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Grizzaffi, Jr., Joseph A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Grizzaffi, Jr., Joseph A.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Morrison, Jr., John E.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Blanchard, Travis J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dunaway, Heber E.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mcneil, James W.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Stumpf, Michael W.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Butler, Megan F.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Collinsworth, Horace J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Henderson, Francis H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Eyre, Byron L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cardone, Michael A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Peavy, Donald R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Littleton, Jeffrey C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bonis, Stanley L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Meek, Jr., Thomas J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cox, Gary W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hymbaugh, Michael E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Ardoin, Shannon E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Prempeh, Osei",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Schexnayder, Lalania K.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dreyer, Donald A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Whatley, Jordan L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Burke, Cullen W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mayo, Tamika D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Muhumuza, Robert S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mcknight, Melanie J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sagi, Phani S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lonseth, Eric D.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Taylor, Deborah A.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Weaver, Kaycee L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kellum, William K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Breaud, Stephen M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bourg, Angele D.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Banda, Venkat R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Batie, Donnie",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"James, Jeremy R.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shamlin, Kenyatta D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Holloway, R. Ashton",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Taylor, Alicia C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lovell, Jr., Cecil W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Chevalier, Tiffanny P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Williamson, William R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dang, Son M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Boyer, Cynthia I.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Newsome, Robert R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mason, Charles W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Frantz, Melinda M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cannizzaro, Christina M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Nettles, Karl M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kahn, Jeffrey M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fuller, Iii, Ira B.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mughal, Tanveer",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gaudin, Ii, Louis B.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Say, George D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Werner, Sharon",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Griebrok, Assercq J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Richarme, Susan L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rumage, Joseph P.",70811,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Drew, Lien K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shaw, Vincent L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Conners, Iii, Michael S.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Frierson, Michael A.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vinci, Edmund B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vick, Dawn R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mccormick, Melissa M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Usher, Andrea S.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Roberts, Claire K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Reddy, Karthik K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Chenevert, Kasey R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gabriel, Serafin O.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gabriel, Serafin O.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Heigle, Thomas J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Richey, Thomas H.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fishbein, Judith T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"May, Katherine E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Prevost, Allison D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Drewitz, Troy U.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Moore, Iii, Ferney A.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cassidy, William M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Caro, Uyen N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bakhos, Samer",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Merritt, Christopher",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bruner, Iii, Warner L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hubbard, William",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Davis, Gehl H.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hall, Corey M.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hall, Corey M.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sinclair, Heidi L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gummadi, Subhakar",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Marcelle, Dawn R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Clark, Wesley A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bullock, Lance E.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shamieh, Khader Samer F.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Linszky, Csilla",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Morris, Jed L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Thibodaux, Robert J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hamed, Ayman A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Farooqi, Erum",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Neumann, Duane E.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Neumann, Duane E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cooley, Richard T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Tenney, Justin M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Green, John B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hamide, John",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Guarisco, Christopher P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Pou, Anna M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Pou, Anna M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dixon, Henry C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Valentine, Desi R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Pollet, Stephen M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Armstrong, Jada L.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Armstrong, Jada L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Oliver, Victor M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Aaron, Rachel A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lee, Victoria",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Poche', George W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Wen, Clement C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hanks, Michael D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Abdallah, Mokhtar",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fontenot, H. Jerrell",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Moukarzel, Robert N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dobreva, Yakimova V.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bourgeois, Jr., Danny P.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Wadhwa, Manjit K.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kirby, Diane M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Weil, Eric J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Okogbaa, Carola B.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Towns, Peter H.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kamyar, Amin",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Appley, Alan J.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Brewster, Sally H.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sommers, Marshall H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Smith, Stover L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jones, Braswell A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cook, Janet W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Petcu, Oana",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Colin, Elsie M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Guillot, Jr., Thomas S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Parris, Cordel Y.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Harris, Renee S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jackson, Scott M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jackson, Scott M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Pope, Karla R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gillen, Grant K.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Barkemeyer, Charles",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Joshi, Shobha N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Caton, Thomas A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mehta, Rahul",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lauve, Andrew D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Patel, Navin P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Tumminello, Vincent V.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rodriguez, Ramon F.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Roberts, Jr., Floyd J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cowart, Ashley A.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Simpson, Karen E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Simpson, Karen E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Simpson, Karen E.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Smith, Christine L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vinayagam, Vasanthi",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Newsome, Nakia A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shannon, Amie B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vyasabattu, Mahender",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rao, Murli C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Subedee, Anup",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Tran, Duy",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Pruitt, Spencer A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Williamson, Charles H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Strittmatter, Heather G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rousset, Kirk M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Heck, Madeleine C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bonner, Jr., Everett J.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fraser, Warren M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"John, Markus V.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vicari, Roberta C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vicari, Roberta C.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vicari, Roberta C.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Aizpurua, Ramon A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Barefield, Darren",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Superneau, Duane W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Day, Harry K.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Carr, Brent R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Peltier, Jacques C.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Ibekwe, Ruby",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sefa, Akwasi",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Smither, Anna R.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Russell, William E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Foy, Matthew C.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Chalasani, Lalitha",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Godke, John R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sevy, Alexander B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Thibodeaux, Ross J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Acierno, Marie D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dejesus, Guido V.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Calhoun, Andrew D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Calhoun, Andrew D.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Falcon, Lara M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Warner, Meredith A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Griffin, Joseph M.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vatsavai, S. Raju",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Brown, Iii, Joseph W.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shah, Manzoor A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Akin, Richard T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Collins, Ted Z.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hedgemon, Helen K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jagneaux, Tonya",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gillen, Geoffrey B.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Barksdale, Phillip A.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bradley, Janet B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sutton, Sylvia M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Coe, Cynthia",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Ehrlich, Philip",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Whitfield, Rani G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Daberkow, Ii, Dayton W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Branstetter, Iii, Robert M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Oneal, Hollis R.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Oneal, Hollis R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bende, Vamshi K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Njoku, Patrick O.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Reinoso, Maria A.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Imesis, Manuel Y.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"James, Ii, Trenton L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Woodard, Suzanne H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Woodard, Suzanne H.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Galland, Holley",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gonzales, Lolita C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Whatley, Adam N.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Craven, Iv, James E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Ausef, Amir H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Brunner, Iii, Baptiste W.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Adhvaryu, Dhaval V.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Post, David E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Post, David E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gately, Iii, Leonard E.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gately, Iii, Leonard E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Osterberger, James S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rogers, Nancy L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Boudreaux, Laura M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rholdon, Frankie G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gonugunta, Kalyan C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Davis, Jr., Paul M.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Logan, John B.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kakarala, Venu B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Peden, Robert G.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Freel, Andrew C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Weiss, Jayne S.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Guidry, Jimmy",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Khoobehi, Kamran",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Muratore, Karen A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gardiner, Scott",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bidros, Dani S.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Petit, Brian J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Thompson, Mikah S.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shamlin, Tasha C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Johnson, Jolene K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sukkar, Salim M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Giorlando, Paul J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Campbell, Walter J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Stewart, Linda C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Perilloux, Brannon C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Brennan, William A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kovach, Angela D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Taylor, Yolunda J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Puyau, Susan F.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Penton, Alison T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Baucom, Catherine C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Wood, Jeremy J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Prejean, Shane P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kelleher, Stephanie M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Silady, Mark F.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lauret, Dean G.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lebourgeois, Iii, Herbert W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lebourgeois, Iii, Herbert W.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lewis, Pamela L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Wiltz, Katy L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Walvekar, Rohan R.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hill, Heather S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Isaza, Jorge E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Brown, Jason A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mencer, Ernest J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Williams, Pamela E.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Burris, Robert A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Williams, Jacqueline G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Safford, Noemie M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jones, Nadja N.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"James, Courtney M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Eagleton, Bernard",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Murphy, Carol R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Reed, Kevin D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Elliott, Robert L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Thomas, Veronica M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vatsavayi, Venugopal",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Johnson, Angela C.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Johnson, Angela C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Udofa, Aniedi E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Udofa, Aniedi E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Alapati, Satyaprasad V.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Despinasse, Ii, Brian P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lodhavia, Devang V.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Reynaud, Marilyn M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Saye, Van B.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Turk, Chirine A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"O'Neal, Catherine S.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"O'Neal, Catherine S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Williams, Dustyn E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Harris, Franklin G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Ogbuefi, Chioma E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Negulescu, Catalina",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Martin, Jamel A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Elofson, Ii, Rodger H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Payne, Thomas N.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Schwartzenburg, George J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Earhart, Robert N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Waddill, James",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fakouri, Dana A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Risal, Bijay",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Williamson, Blake K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Boucree, Joseph B.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Felix, Steven D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Thorla, Jr., Ira H.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Thorla, Jr., Ira H.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gupta, Shaminder M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bourgeois, Michael O.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Wang, Wilson L.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shalaby, Monir T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Thomas, Terrie R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hetzler, Laura T.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Valentin, Gardy",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sharon, Marius S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dean, John A.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dean, John A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cataldie, Louis",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Saulny, Christina M.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Pennington, Jay C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Chimeka-Anyanwoke, Gertrude",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Boudreaux, Jason G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rolfsen, Michael L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Stuart, Michael O.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Stuart, Michael O.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Harrell, Brian R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Pakanati, Krishna C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Feinstein, Ronald A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Short, Tracee C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Smith, Matthew D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Moll, David E.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Hagens, Danyel A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jeffcoat, Alicia S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jeffcoat, Alicia S.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gaupp, Frederick B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Theunissen, Taylor B.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Murrill, Melvin",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Wahid, Darakhshan G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rao, Aravinda",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Stopa, Aluizio R.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Marshall, John E.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Marshall, John E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Summers, Lori E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cole, Joseph C.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Ward, Gregory",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Armington, William G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Helm, Boyd M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rome, Courtney M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Failla, Paul J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Heroman, Gregory M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Katta, Chandra M.",70812,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dantin, Karen C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vallanki, Vijay L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Petty, Fred H.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gupta, Alok K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mays, Spyrie D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Culotta, Roy J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mays, Stan J.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Funes, Christopher M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Patel, Nirupa J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fort, M. Giles",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Garbutt, Mark G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Black, Bradley C.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Polek-Nowakowska, Halina E.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lissauer, Jonathan",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Lieux, Jr., T. Richard",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sanches, Darryl S.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bardin, Erin B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kilpatrick, Robin E.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Stone, Karen D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Zheng, Yihong",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Espinoza, Luis R.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Beltran, Mario A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Roberts, Jonathan J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Denham, Amber A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Patel, Hina B.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Miller, Bahnsen P.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Giffin, Iii, Carl J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Blanchard, Meagan T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Howell, J. Kerry",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Howell, J. Kerry",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Woody, Mark W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jayasankaran, M. P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mahadevan, Pankajam",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Punukollu, Sumanth",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cook, Lori M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gravois, Wayne D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Schulte, Brian P.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Vargas, Juan C.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Roby, Marilyn J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Dupre, Michael W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Chamarthy, Srinivasu K.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Gordon, Stephen V.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Byrd, Lori N.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Byrd, Lori N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Matrisciano, Justin G.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Joseph, Allen S.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Zhuk, Stanislav A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bansal, Aditya R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Michel, Brandon N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Bienvenu, Bryan J.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Fitch, Andriette M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Chasuk, Robert M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Atallah, Rabih E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Alonso, Elizabeth",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Banks, Raynando L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Liechty, Peter G.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Abrams, Jr., Mathew",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Jones, Stacy D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Sparks, Thomas W.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Rhodes, Kent M.",70805,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Zuckerman, Steven J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Francis, Adeboye A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Morgan, William L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Harrell, Nicole M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Walters, Iii, Jules",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Chestaro, Cindy E.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Venters, Charmaine L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Howell, Todd P.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Shalaby, Mona A.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Cormier, Jason L.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Person, Marjorie N.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Person, Marjorie N.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Mixon, Tarisha R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Kendrick, Rhonda F.",70802,East Baton Rouge,BATON ROUGE
-Practitioner,Physician (md),"Williams, Karen R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Rheubottom, Tara L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Rosales, Miguel C.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Knight, Jr, John J.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Guillory, Stephen A.",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Ellis, Alencia C.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Johnson, Jodi L.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Fitzgerald, Kyle R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Frick, Brad W.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Castaneda, Daisy T.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Arceneaux, Rebecca D.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Herrin, James R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Landry, Chip",70807,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Nguyen, Holly M.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Deyo, Sarah R.",70806,East Baton Rouge,BATON ROUGE
-Practitioner,Physician's Assistant (pa),"Wilder, Jr., Alonzo",70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Pezant Wanda L.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Melker Clino M.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Jackson-Wilson Andrea L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Bennett Danielle K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Gray-Winfrey Wylea M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Cassano Ronald L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Delaune Margaret N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dejean Rene J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Thomas Karra D.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Thomas Karra D.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Harris Amanda I.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Harris Amanda I.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Harris Amanda I.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Hue Lacey C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Marshall-Brown Dwone L.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Brignac Jennifer L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Griffey Shirley A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Jones Angela,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dart William D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Warner Wanda G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Patterson-Davis Brittney R.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Patterson-Davis Brittney R.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Curtis Judith A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Kyles Rhea E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Perry Christy C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Bland Stacie M.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Bland Stacie M.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Clary Hope N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Clary Hope N.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Clary Hope N.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Bovard Kelli S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Guillot Mary G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Maynard Catherine M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Keller Trina M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Johnson Bridgette S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Lipscomb Neva W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Brouilette Robert E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Welton Debra K.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Welton Debra K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Montgomery Laura A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Leblanc Linda Y.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Leblanc Linda Y.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Leblanc Linda Y.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Koons Chad R.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Smith Deborah L.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Welch Clay T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Cormier Glen,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Britton Elizabeth N.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Mazza-Ricketts Mary B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dibble Kristy L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Davis Rebecca F.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Monroe Latonya C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Arboneaux Benji J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Thompson Keytha L.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Shepherd Kay B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Mcguire Sarah S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Okungbowa Roland O.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Bridgewater-Doyle Lois L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Thomas Lakesha T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Delaughter Joseph N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Stover Anissa L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Bell Dionne F.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Murphy Christi K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dempsey Karen C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Robvais Veronica N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Legendre Adrianne C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Haik Chris N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Shriver Pamela S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Schittone Amanda T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Easley Amanda,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Roberts Tiffany M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Roberts Tiffany M.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Roberts Tiffany M.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Olivier Roumay,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Carroll Idena M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Jewell Emily H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Erwin Dean N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Del Castillo Nicole M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),David Lynette B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Honora Angelia D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Browning Rhonda N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Stewart Simone D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Stewart Simone D.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Stewart Simone D.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Foster Wayne D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Zoerner Christine E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Labatut Dwayne P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Roscoe Narkita W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Berggreen Dana L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dunston Diana H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dunston Diana H.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dunston Diana H.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Harris Lenore M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Mayeux Jack J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Cook Ingrid,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Cook Ingrid,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Cook Ingrid,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Landry Cristel C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Nickens Joni F.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Rogers Barbara W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Bly William,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Mock Emily G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Ash Michelle N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),King Robreka H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Green Perkins Sheila S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Dauenhauer Megan M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Sharp Melanie H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),May Tadd A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Crawford Amanda K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Melancon Bryan N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Schnebelen Kyle P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Stewart Andre B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Green Samaki N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Landry Alexis P.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Brennan Christine,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Legnon Christopher M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Fowler Leanne H.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Gray Rachel F.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Gray Rachel F.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Adv Prac Reg Nurse (aprn),Gay James P.,70811,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fusilier Gregory,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gonzales Joseph A.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fargason Donna B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Grizzaffi Jr. Joseph A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Grizzaffi Jr. Joseph A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Grizzaffi Jr. Joseph A.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Morrison Jr. John E.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Blanchard Travis J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dunaway Heber E.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mcneil James W.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Stumpf Michael W.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Butler Megan F.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Collinsworth Horace J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Henderson Francis H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Eyre Byron L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cardone Michael A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Peavy Donald R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Littleton Jeffrey C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bonis Stanley L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Meek Jr. Thomas J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cox Gary W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hymbaugh Michael E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Ardoin Shannon E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Prempeh Osei,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Schexnayder Lalania K.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dreyer Donald A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Whatley Jordan L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Burke Cullen W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mayo Tamika D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Muhumuza Robert S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mcknight Melanie J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sagi Phani S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lonseth Eric D.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Taylor Deborah A.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Weaver Kaycee L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kellum William K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Breaud Stephen M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bourg Angele D.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Banda Venkat R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Batie Donnie,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),James Jeremy R.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shamlin Kenyatta D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Holloway R. Ashton,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Taylor Alicia C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lovell Jr. Cecil W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Chevalier Tiffanny P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Williamson William R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dang Son M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Boyer Cynthia I.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Newsome Robert R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mason Charles W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Frantz Melinda M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cannizzaro Christina M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Nettles Karl M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kahn Jeffrey M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fuller Iii Ira B.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mughal Tanveer,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gaudin Ii Louis B.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Say George D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Werner Sharon,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Griebrok Assercq J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Richarme Susan L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rumage Joseph P.,70811,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Drew Lien K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shaw Vincent L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Conners Iii Michael S.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Frierson Michael A.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vinci Edmund B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vick Dawn R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mccormick Melissa M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Usher Andrea S.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Roberts Claire K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Reddy Karthik K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Chenevert Kasey R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gabriel Serafin O.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gabriel Serafin O.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Heigle Thomas J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Richey Thomas H.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fishbein Judith T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),May Katherine E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Prevost Allison D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Drewitz Troy U.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Moore Iii Ferney A.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cassidy William M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Caro Uyen N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bakhos Samer,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Merritt Christopher,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bruner Iii Warner L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hubbard William,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Davis Gehl H.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hall Corey M.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hall Corey M.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sinclair Heidi L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gummadi Subhakar,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Marcelle Dawn R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Clark Wesley A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bullock Lance E.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shamieh Khader Samer F.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Linszky Csilla,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Morris Jed L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Thibodaux Robert J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hamed Ayman A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Farooqi Erum,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Neumann Duane E.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Neumann Duane E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cooley Richard T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Tenney Justin M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Green John B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hamide John,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Guarisco Christopher P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Pou Anna M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Pou Anna M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dixon Henry C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Valentine Desi R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Pollet Stephen M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Armstrong Jada L.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Armstrong Jada L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Oliver Victor M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Aaron Rachel A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lee Victoria,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Poche' George W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Wen Clement C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hanks Michael D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Abdallah Mokhtar,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fontenot H. Jerrell,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Moukarzel Robert N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dobreva Yakimova V.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bourgeois Jr. Danny P.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Wadhwa Manjit K.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kirby Diane M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Weil Eric J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Okogbaa Carola B.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Towns Peter H.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kamyar Amin,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Appley Alan J.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Brewster Sally H.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sommers Marshall H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Smith Stover L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jones Braswell A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cook Janet W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Petcu Oana,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Colin Elsie M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Guillot Jr. Thomas S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Parris Cordel Y.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Harris Renee S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jackson Scott M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jackson Scott M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Pope Karla R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gillen Grant K.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Barkemeyer Charles,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Joshi Shobha N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Caton Thomas A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mehta Rahul,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lauve Andrew D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Patel Navin P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Tumminello Vincent V.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rodriguez Ramon F.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Roberts Jr. Floyd J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cowart Ashley A.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Simpson Karen E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Simpson Karen E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Simpson Karen E.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Smith Christine L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vinayagam Vasanthi,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Newsome Nakia A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shannon Amie B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vyasabattu Mahender,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rao Murli C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Subedee Anup,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Tran Duy,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Pruitt Spencer A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Williamson Charles H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Strittmatter Heather G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rousset Kirk M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Heck Madeleine C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bonner Jr. Everett J.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fraser Warren M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),John Markus V.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vicari Roberta C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vicari Roberta C.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vicari Roberta C.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Aizpurua Ramon A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Barefield Darren,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Superneau Duane W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Day Harry K.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Carr Brent R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Peltier Jacques C.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Ibekwe Ruby,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sefa Akwasi,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Smither Anna R.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Russell William E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Foy Matthew C.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Chalasani Lalitha,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Godke John R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sevy Alexander B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Thibodeaux Ross J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Acierno Marie D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dejesus Guido V.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Calhoun Andrew D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Calhoun Andrew D.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Falcon Lara M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Warner Meredith A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Griffin Joseph M.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vatsavai S. Raju,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Brown Iii Joseph W.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shah Manzoor A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Akin Richard T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Collins Ted Z.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hedgemon Helen K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jagneaux Tonya,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gillen Geoffrey B.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Barksdale Phillip A.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bradley Janet B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sutton Sylvia M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Coe Cynthia,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Ehrlich Philip,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Whitfield Rani G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Daberkow Ii Dayton W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Branstetter Iii Robert M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Oneal Hollis R.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Oneal Hollis R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bende Vamshi K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Njoku Patrick O.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Reinoso Maria A.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Imesis Manuel Y.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),James Ii Trenton L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Woodard Suzanne H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Woodard Suzanne H.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Galland Holley,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gonzales Lolita C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Whatley Adam N.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Craven Iv James E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Ausef Amir H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Brunner Iii Baptiste W.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Adhvaryu Dhaval V.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Post David E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Post David E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gately Iii Leonard E.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gately Iii Leonard E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Osterberger James S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rogers Nancy L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Boudreaux Laura M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rholdon Frankie G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gonugunta Kalyan C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Davis Jr. Paul M.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Logan John B.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kakarala Venu B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Peden Robert G.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Freel Andrew C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Weiss Jayne S.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Guidry Jimmy,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Khoobehi Kamran,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Muratore Karen A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gardiner Scott,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bidros Dani S.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Petit Brian J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Thompson Mikah S.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shamlin Tasha C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Johnson Jolene K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sukkar Salim M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Giorlando Paul J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Campbell Walter J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Stewart Linda C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Perilloux Brannon C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Brennan William A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kovach Angela D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Taylor Yolunda J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Puyau Susan F.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Penton Alison T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Baucom Catherine C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Wood Jeremy J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Prejean Shane P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kelleher Stephanie M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Silady Mark F.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lauret Dean G.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lebourgeois Iii Herbert W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lebourgeois Iii Herbert W.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lewis Pamela L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Wiltz Katy L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Walvekar Rohan R.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hill Heather S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Isaza Jorge E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Brown Jason A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mencer Ernest J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Williams Pamela E.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Burris Robert A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Williams Jacqueline G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Safford Noemie M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jones Nadja N.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),James Courtney M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Eagleton Bernard,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Murphy Carol R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Reed Kevin D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Elliott Robert L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Thomas Veronica M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vatsavayi Venugopal,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Johnson Angela C.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Johnson Angela C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Udofa Aniedi E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Udofa Aniedi E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Alapati Satyaprasad V.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Despinasse Ii Brian P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lodhavia Devang V.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Reynaud Marilyn M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Saye Van B.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Turk Chirine A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),O'Neal Catherine S.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),O'Neal Catherine S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Williams Dustyn E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Harris Franklin G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Ogbuefi Chioma E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Negulescu Catalina,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Martin Jamel A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Elofson Ii Rodger H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Payne Thomas N.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Schwartzenburg George J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Earhart Robert N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Waddill James,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fakouri Dana A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Risal Bijay,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Williamson Blake K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Boucree Joseph B.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Felix Steven D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Thorla Jr. Ira H.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Thorla Jr. Ira H.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gupta Shaminder M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bourgeois Michael O.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Wang Wilson L.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shalaby Monir T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Thomas Terrie R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hetzler Laura T.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Valentin Gardy,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sharon Marius S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dean John A.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dean John A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cataldie Louis,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Saulny Christina M.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Pennington Jay C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Chimeka-Anyanwoke Gertrude,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Boudreaux Jason G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rolfsen Michael L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Stuart Michael O.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Stuart Michael O.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Harrell Brian R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Pakanati Krishna C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Feinstein Ronald A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Short Tracee C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Smith Matthew D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Moll David E.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Hagens Danyel A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jeffcoat Alicia S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jeffcoat Alicia S.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gaupp Frederick B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Theunissen Taylor B.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Murrill Melvin,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Wahid Darakhshan G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rao Aravinda,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Stopa Aluizio R.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Marshall John E.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Marshall John E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Summers Lori E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cole Joseph C.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Ward Gregory,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Armington William G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Helm Boyd M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rome Courtney M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Failla Paul J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Heroman Gregory M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Katta Chandra M.,70812,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dantin Karen C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vallanki Vijay L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Petty Fred H.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gupta Alok K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mays Spyrie D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Culotta Roy J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mays Stan J.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Funes Christopher M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Patel Nirupa J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fort M. Giles,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Garbutt Mark G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Black Bradley C.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Polek-Nowakowska Halina E.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lissauer Jonathan,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Lieux Jr. T. Richard,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sanches Darryl S.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bardin Erin B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kilpatrick Robin E.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Stone Karen D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Zheng Yihong,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Espinoza Luis R.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Beltran Mario A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Roberts Jonathan J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Denham Amber A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Patel Hina B.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Miller Bahnsen P.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Giffin Iii Carl J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Blanchard Meagan T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Howell J. Kerry,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Howell J. Kerry,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Woody Mark W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jayasankaran M. P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mahadevan Pankajam,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Punukollu Sumanth,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cook Lori M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gravois Wayne D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Schulte Brian P.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Vargas Juan C.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Roby Marilyn J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Dupre Michael W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Chamarthy Srinivasu K.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Gordon Stephen V.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Byrd Lori N.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Byrd Lori N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Matrisciano Justin G.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Joseph Allen S.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Zhuk Stanislav A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bansal Aditya R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Michel Brandon N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Bienvenu Bryan J.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Fitch Andriette M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Chasuk Robert M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Atallah Rabih E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Alonso Elizabeth,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Banks Raynando L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Liechty Peter G.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Abrams Jr. Mathew,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Jones Stacy D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Sparks Thomas W.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Rhodes Kent M.,70805,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Zuckerman Steven J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Francis Adeboye A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Morgan William L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Harrell Nicole M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Walters Iii Jules,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Chestaro Cindy E.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Venters Charmaine L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Howell Todd P.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Shalaby Mona A.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Cormier Jason L.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Person Marjorie N.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Person Marjorie N.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Mixon Tarisha R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Kendrick Rhonda F.,70802,East Baton Rouge,BATON ROUGE
+Practitioner,Physician (md),Williams Karen R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Rheubottom Tara L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Rosales Miguel C.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Knight Jr John J.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Guillory Stephen A.,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Ellis Alencia C.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Johnson Jodi L.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Fitzgerald Kyle R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Frick Brad W.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Castaneda Daisy T.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Arceneaux Rebecca D.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Herrin James R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Landry Chip,70807,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Nguyen Holly M.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Deyo Sarah R.,70806,East Baton Rouge,BATON ROUGE
+Practitioner,Physician's Assistant (pa),Wilder Jr. Alonzo,70806,East Baton Rouge,BATON ROUGE
