@@ -5,10 +5,34 @@ var specialtylist = [];
 var map = null;
 var accordheight;
 var accordheight2;
+var zips=[];
 var datalist = [];
 var provdatalist = [];
 var csvdata = [];
+var masterprovlist = [];
+var medicaredata = [];
+var bcbsdatalegend = "";
 var openinfo = null;
+var ziplist = [
+	70817,
+	70816,
+	70802,
+	70805,
+	70809,
+	70811,
+	70814,
+	70819,
+	70820,
+	70803,
+	70815,
+	70808,
+	70810,
+	70714,
+	70801,
+	70806,
+	70807,
+	70812
+];
 var healthdistricts = [{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []}];
 var healthdistrictspop = [0,0,0,0,0,0,0];
 var colors = [
@@ -56,6 +80,27 @@ var colors = [
     "#ffffff",
     "#ffff00"
 ];
+
+colors2 = [
+	"#FFFFFF",
+	"#000000",
+	"#FF0000",
+	"#FFFF00",
+	"#ff00ff",
+    "#ffd700",
+    "#008000",
+    "#4b0082",
+    "#f0e68c",
+    "#add8e6",
+    "#e0ffff",
+    "#90ee90",
+    "#d3d3d3",
+    "#ffb6c1",
+    "#ffffe0",
+	"#00ff00",
+    "#ff00ff",
+    "#800000"
+]
 	var routes =  [{line_num: 8, name: "Gus Young/BRCC", t_id: "1dWIImeT5RhF7EFPBOw3JEou99Ti8s6Djb3ecLHr4"},
 					{line_num: 10, name: "Scenic Hwy. - Southern Univ.", t_id: "1zr295Sukg580fmUDKTwfYOvjtLc49_xfzt1EdTKM"},
 					{line_num: 11, name: "Northside Circulator", t_id: "1WeBIBIcSRjNuFFMqeu733qZ__5MBfothzit7p6Q4"},
@@ -90,6 +135,20 @@ var colors = [
 					
 
 function initMap (){
+/* 	$.ajax({
+		type: 'GET',
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/1542e9dfac4e095d79379c6f1d810f7d068e53c8/provdataNPI.json',
+		dataType: 'text',
+		error: function(xhr, status, error) { 
+		},
+		success: function(data){
+		
+			var npidata = JSON.parse(data);
+			
+			console.log(data);
+		}
+	}) */
+	
 	google.maps.visualRefresh = true;
     var mapDiv = document.getElementById('googlemap');
     map = new google.maps.Map(mapDiv, {
@@ -108,9 +167,22 @@ function initMap (){
 	showBusRoutes();
 	createControlPanel();
 	
+	var myzipparser = new geoXML3.parser({
+		map: map,
+		afterParse: useZipData
+	});
+	myzipparser.parse('https://raw.githubusercontent.com/Cadetho/ProviderMapping/f11763656d79e2d60da5c1deb860e5c5f8cb4c16/Baton-Rouge-60506.kml');
 
 }
 
+function useZipData(data){
+	for(var i=0;i<data[0].gpolygons.length;i++){
+		data[0].gpolygons[i].infoWindow.setContent(ziplist[i]+"");
+		data[0].gpolygons[i].infoWindowOptions.content = ziplist[i]+"";
+		zips.push({poly: data[0].gpolygons[i], facilities: [], providers: []});
+	}
+	
+}
 function useProvCSVData(data){
 	var provdatalist=data[0].split(',');
 	data.shift();
@@ -125,7 +197,7 @@ function useProvCSVData(data){
 				specialtylist[specfind].provindexlist.push(i);
 			}
 		}
-		provdata.push({lname: data[i][3], fname: data[i][4], specialty: specialtyd, lat: data[i][25], lng: data[i][26], npi: data[i][0], org: data[i][17], marker: "", infowindow: ""});
+		provdata.push({lname: data[i][3], fname: data[i][4], specialty: specialtyd, lat: data[i][25], lng: data[i][26],zip: data[i][27], npi: data[i][0], org: data[i][17], marker: "", infowindow: ""});
 	}
 	for(i=0;i<provdata.length;i++){
  		for(z=0;z<tracts.length;z++){
@@ -144,7 +216,8 @@ function useProvCSVData(data){
 		provdata[i].marker = new google.maps.Marker({
 			position: {lat: parseFloat(provdata[i].lat), lng: parseFloat(provdata[i].lng)},
 			map: map,
-			title: provdata[i].fname + " " + provdata[i].lname
+			title: provdata[i].fname + " " + provdata[i].lname,
+			visible: false
 		});
 		google.maps.event.addListener(provdata[i].marker, 'click', (function(marker, content,infowindow){
 			return function(){
@@ -159,10 +232,19 @@ function useProvCSVData(data){
 			};
 		})(provdata[i].marker, content, provdata[i].infowindow));
 		}
-		
-		console.log(tracts);
+		$('#checkbox-provmarker').prop('checked', false);
+		$('#checkbox-provmarker').on('click', handleProvMarkerToggle);
+		createMasterProvList("prov");
 }
+function handleProvMarkerToggle(){
+	var bool = $('#checkbox-provmarker').prop('checked')
+	
+	for(i=0;i<provdata.length;i++){
+		provdata[i].marker.setVisible(bool);
+	}
 
+	
+}
 
 function useCSVData(data){
 	data.pop();
@@ -205,7 +287,7 @@ function useCSVData(data){
 		}
 	}
 	$("#checkbox-districts").prop("checked", false);
-	$("#checkbox-districts").on("click", handleDistrictToggle);
+	$("[name='area']").on("change", handleDistrictToggle);
 	$('#district-box').show();
 	createCSVDataControls();
 }
@@ -267,7 +349,8 @@ function handleCSVToggle( e ){
 function useTheData(doc){
 	for(var i=0;i<doc[0].gpolygons.length;i++){
 		tracts.push({tract: doc[0].gpolygons[i], providers: []});
-		doc[0].gpolygons[i].setOptions({fillColor: colors[i]});
+		doc[0].gpolygons[i].setOptions({fillColor: colors[i]})
+		doc[0].gpolygons[i].setVisible(false);
 	}
 	var csvdata=$.ajax({
 		type: 'GET',
@@ -293,6 +376,85 @@ function useTheData(doc){
 			console.log(thrownError);
 		}
 	});
+	
+	var bcbscsvdata=$.ajax({
+		type: 'get',
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/nbrBCBSProviders.csv',
+		dataType: 'text',
+		success: function(result){
+			var result = result.split(/\r?\n|\r/);
+			usebcbsdata(result);
+		}
+	});
+	var medicarecsvdata=$.ajax({
+		type: 'get',
+		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/master/Medicare_Physician_and_Other_Supplier_National_Provider_Identifier__NPI__Aggregate_Report__Calendar_Year_2014.csv',
+		dataType: 'text',
+		success: function(result){
+			var result = result.split(/\r?\n|\r/);
+			usemedicaredata(result);
+		}
+	});
+}
+
+function usebcbsdata(data){
+	for(i=0;i<data.length;i++){
+		data[i]=data[i].split(',');
+	}
+	bcbsdatalegend = data[0];
+	data.shift();
+	for(i=0;i<data.length;i++){
+		
+		if(data[i][0]==='Facility'||data[i][0]==='Provider Group'){
+			
+		}
+		
+	}
+	
+}
+
+function usemedicaredata(data){
+	for(i=0;i<data.length;i++){
+		medicaredata.push(data[i].split(','));
+	}
+	medicaredata.pop();
+	medicaredata.shift();
+	createMasterProvList("med");
+}
+var booleanstr = null;
+function createMasterProvList(boolstr){
+	if((booleanstr==="prov"&&boolstr==="med")||(booleanstr==="med"&&boolstr==="prov")){
+	var pos = 0;
+	var meddatatemp = medicaredata;
+	var provdatatemp = provdata;
+	console.log(provdatatemp.length);
+	console.log(meddatatemp.length);
+	while(true){
+		if(pos<meddatatemp.length){
+		var tempnpi = meddatatemp[pos][0];
+		var index = provdatatemp.findIndex(x => x.npi === tempnpi);
+		if(index != -1){
+			masterprovlist.push(provdatatemp[index]);
+			meddatatemp.splice(pos,1);
+			provdatatemp.splice(index, 1);
+		} 
+		pos++;
+		} else {
+			break;
+		}
+	}
+	console.log(provdatatemp);
+	console.log(meddatatemp);
+	console.log(masterprovlist);
+	
+	masterprovlist.push.apply(masterprovlist, provdatatemp);
+	for(i=0;i<meddatatemp.length;i++){
+		meddatatemp[i]=({fname: meddatatemp[i][2], lname: meddatatemp[i][1], npi: meddatatemp[i][0]});
+	}
+	console.log(masterprovlist);
+	} else {
+		booleanstr = boolstr;
+	}
 }
 function getRangeColor(percent){
 	var h = percent*180; //hue
@@ -310,7 +472,8 @@ function createControlPanel(){
 	});
 	$('div#accordion').height(accordheight);
 	for(var i=0;i<routes.length;i++){
-		buspanel.append("<li><label for='checkbox-"+routes[i].line_num+"'>"+routes[i].name+"<input type='checkbox'  class='toggle is_selected' name='checkbox-"+routes[i].line_num+"' id='checkbox-"+routes[i].line_num+"' value='"+routes[i].line_num+"' checked='true'> </label></li>");
+		buspanel.append("<li><label for='checkbox-"+routes[i].line_num+"'>"+routes[i].name+"<input type='checkbox'  class='toggle is_selected' name='checkbox-"+routes[i].line_num+"' id='checkbox-"+routes[i].line_num+"' value='"+routes[i].line_num+"' checked='false'> </label></li>");
+		$('#checkbox'+routes[i].line_num).prop('checked', false);
 	}
 	//$('input').checkboxradio();
 	$(".toggle").on("change", handleToggle );
@@ -343,26 +506,46 @@ $(function () {
 	$("div#accordion2 ul").click(function (e) {
 		e.stopPropagation();
 	});
+	$("#checkbox-buses").prop('checked', false);
 	$("#checkbox-buses").on("click", handleBusToggle);
 	
 	
 });
 function handleDistrictToggle( e ){
-	if($('#checkbox-districts').prop('checked')){
+	var target = e.target.title;
+	if(target === "districts"){
 		setDistrictFill(colors);
-	} else {
+	} else if(target ==="tracts") {
 		setTractFill(colors);
+	} else if(target === "zips"){
+		setZipFill(colors);
+	}
+}
+
+function setZipFill(colorfill){
+	for(i=0;i<tracts.length;i++){
+		tracts[i].tract.setVisible(false);
+	}
+	for(a=0;a<zips.length;a++){
+		zips[a].poly.setVisible(true);
 	}
 }
 function setTractFill(colorfill){
+	for(a=0;a<zips.length;a++){
+		zips[a].poly.setVisible(false);
+	}
 	for(i=0;i<tracts.length;i++){
+		tracts[i].tract.setVisible(true);
 		tracts[i].tract.setOptions({fillColor:colorfill[i], strokeWeight:'2'});
 	}
 }
 function setDistrictFill(colorfill){
+	for(a=0;a<zips.length;a++){
+		zips[a].poly.setVisible(false);
+	}
 	for(i=0;i<healthdistricts.length;i++){
 		for(a=0;a<healthdistricts[i].tracts.length;a++){
-			
+			healthdistricts[i].tracts[a].setVisible(true);
 			healthdistricts[i].tracts[a].setOptions({fillColor: colorfill[i], strokeWeight: '0'});
 		}
 	}
@@ -383,9 +566,9 @@ function handleToggle( e ){
 	var val = target.val();
 	var line = $.grep(routelines, function(e){ return e.routenum == val });
 	if(target.prop('checked')){
-		line[0].polyline.setVisible(true);
+		line[0].polyline.setOptions({strokeWeight: '2'});
 	} else {
-		line[0].polyline.setVisible(false);
+		line[0].polyline.setOptions({strokeWeight: '0'});
 	}
 	
 }
@@ -408,8 +591,8 @@ function displayroute(routeresp, routeobj){
 	var pline = new google.maps.Polyline({
 		path: p_route,
 		strokeColor: colors[routelines.length],
-		strokeWeight: 2,
-		strokeOpacity: 1
+		strokeWeight: 0,
+		visibility: false
 	});
 	routelines.push({polyline: pline, routenum: routeobj.line_num, routename: routeobj.name});
 	pline.setMap(map);

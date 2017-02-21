@@ -15,17 +15,22 @@
 	<body>
 		<div id="controlpanel">
 			<div id="accordion" class="accordion">
-					<label for="busroute">Bus Routes</label><input type="checkbox" class="toggle_buses is_selected" id="checkbox-buses" checked='true'></input>
+					<label for="busroute">Bus Routes</label><input type="checkbox" class="toggle_buses is_selected" id="checkbox-buses" checked='false'></input>
 					<ul class="dropdown-list">
 					</ul>
 			</div>
 			<div id="district-box" hidden>
-				<label for="districts">Show in Districts</label><input type="checkbox" class="toggle_district" id="checkbox-districts" checked='false'></input>
+				<label for="tracts">Tracts</label><input title="tracts" name="area" type="radio" class="toggle_tractsradio" id="checkbox-tractradio" checked="false"></input>
+				<label for="districts">Districts</label><input title="districts" name="area"type="radio" class="toggle_district" id="checkbox-districts" checked='false'></input>
+				<label for="zipz">ZIP Codes</label><input title="zips" name="area"type="radio" class="toggle_zips" id="checkbox-zips" checked='false'></input>
 			</div>
 			<div id="accordion2" class="accordion">
 				<legend>CSV Data</legend>
 				<ul class="dropdown-list">
 				</ul>
+			</div>
+			<div id="provmarker-box">
+				<label for="provmarker">Show Provider Markers</label><input type="checkbox" class="toggle_provmarkers" id="checkbox-provmarker" checked='false'></input>
 			</div>
 		</div>
 		<div id="googlemap">
