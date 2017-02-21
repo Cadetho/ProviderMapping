@@ -199,7 +199,7 @@ function useProvCSVData(data){
 		}
 		provdata.push({lname: data[i][3], fname: data[i][4], specialty: specialtyd, lat: data[i][25], lng: data[i][26],zip: data[i][27], npi: data[i][0], org: data[i][17], marker: "", infowindow: ""});
 	}
-	for(i=0;i<provdata.length;i++){
+/* 	for(i=0;i<provdata.length;i++){
  		for(z=0;z<tracts.length;z++){
 			var lngg = provdata[i].lng;
 			var latt = provdata[i].lat;
@@ -231,16 +231,15 @@ function useProvCSVData(data){
 				infowindow.open(map,marker);
 			};
 		})(provdata[i].marker, content, provdata[i].infowindow));
-		}
-		$('#checkbox-provmarker').prop('checked', false);
-		$('#checkbox-provmarker').on('click', handleProvMarkerToggle);
+		} */
+
 		createMasterProvList("prov");
 }
 function handleProvMarkerToggle(){
 	var bool = $('#checkbox-provmarker').prop('checked')
 	
-	for(i=0;i<provdata.length;i++){
-		provdata[i].marker.setVisible(bool);
+	for(i=0;i<masterprovlist.length;i++){
+		masterprovlist[i].marker.setVisible(bool);
 	}
 
 	
@@ -396,7 +395,6 @@ function useTheData(doc){
 		}
 	});
 }
-
 function usebcbsdata(data){
 	for(i=0;i<data.length;i++){
 		data[i]=data[i].split(',');
@@ -412,7 +410,6 @@ function usebcbsdata(data){
 	}
 	
 }
-
 function usemedicaredata(data){
 	for(i=0;i<data.length;i++){
 		medicaredata.push(data[i].split(','));
@@ -427,8 +424,7 @@ function createMasterProvList(boolstr){
 	var pos = 0;
 	var meddatatemp = medicaredata;
 	var provdatatemp = provdata;
-	console.log(provdatatemp.length);
-	console.log(meddatatemp.length);
+
 	while(true){
 		if(pos<meddatatemp.length){
 		var tempnpi = meddatatemp[pos][0];
@@ -443,18 +439,53 @@ function createMasterProvList(boolstr){
 			break;
 		}
 	}
-	console.log(provdatatemp);
-	console.log(meddatatemp);
-	console.log(masterprovlist);
-	
+
 	masterprovlist.push.apply(masterprovlist, provdatatemp);
 	for(i=0;i<meddatatemp.length;i++){
-		meddatatemp[i]=({fname: meddatatemp[i][2], lname: meddatatemp[i][1], npi: meddatatemp[i][0]});
+		meddatatemp[i]=({fname: meddatatemp[i][2], lname: meddatatemp[i][1], npi: meddatatemp[i][0], lat: meddatatemp[i][11], lng: meddatatemp[i][12], infowindow: null, marker: null});
 	}
-	console.log(masterprovlist);
+	console.log(meddatatemp);
+	masterprovlist.push.apply(masterprovlist, meddatatemp);
+	placeMasterListMarkers();
 	} else {
 		booleanstr = boolstr;
 	}
+}
+function placeMasterListMarkers(){
+	for(i=0;i<masterprovlist.length;i++){
+		for(z=0;z<tracts.length;z++){
+			var lngg = masterprovlist[i].lng;
+			var latt = masterprovlist[i].lat;
+			var pos = new google.maps.LatLng(latt, lngg);
+			var bool = google.maps.geometry.poly.containsLocation(pos, tracts[z].tract);
+			if(bool){
+				tracts[z].providers.push(masterprovlist[i]);
+			}
+		}
+		var content = "<div class='info_content'><table><tr><td>Name</td><td>"+masterprovlist[i].fname + " " + masterprovlist[i].lname + "</td></tr><tr><td>NPI</td><td>"+masterprovlist[i].npi+"</td></tr></table></div>";
+		masterprovlist[i].infowindow = new google.maps.InfoWindow();
+		masterprovlist[i].marker = new google.maps.Marker({
+			position: {lat: parseFloat(masterprovlist[i].lat), lng: parseFloat(masterprovlist[i].lng)},
+			map: map,
+			title: masterprovlist[i].fname + " " + masterprovlist[i].lname,
+			visible: false
+		});
+		google.maps.event.addListener(masterprovlist[i].marker, 'click', (function(marker, content,infowindow){
+			return function(){
+				if(openinfo == null){
+					openinfo = infowindow;
+				} else {
+					openinfo.close();
+					openinfo = infowindow;
+				}
+				infowindow.setContent(content);
+				infowindow.open(map,marker);
+			};
+		})(masterprovlist[i].marker, content, masterprovlist[i].infowindow));
+	}
+	console.log(tracts);
+	$('#checkbox-provmarker').prop('checked', false);
+	$('#checkbox-provmarker').on('click', handleProvMarkerToggle);
 }
 function getRangeColor(percent){
 	var h = percent*180; //hue
