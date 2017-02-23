@@ -9,31 +9,38 @@ var zips=[];
 var datalist = [];
 var provdatalist = [];
 var csvdata = [];
+var schoollist = [];
+var parklist = [];
 var masterprovlist = [];
 var medicaredata = [];
+var clickevents = [];
 var bcbsdatalegend = "";
 var openinfo = null;
+var provbool = false;
+var medbool = false;
+var zipbool = false;
+var global_fillOpacity="0.49609375";
 var ziplist = [
-	70817,
-	70816,
-	70802,
-	70805,
-	70809,
-	70811,
-	70814,
-	70819,
-	70820,
-	70803,
-	70815,
-	70808,
-	70810,
-	70714,
-	70801,
-	70806,
-	70807,
-	70812
+{zip: 70817, pop: 31192, show: false},
+{zip: 70816, pop: 43194, show: false},
+{zip: 70802, pop: 27267, show: true},
+{zip: 70805, pop: 29909, show: true},
+{zip: 70809, pop: 25050, show: false},
+{zip: 70811, pop: 13676, show: true},
+{zip: 70814, pop: 14514, show: true},
+{zip: 70819, pop: 5040, show: true},
+{zip: 70820, pop: 17222, show: false},
+{zip: 70803, pop: 1335, show: true},
+{zip: 70815, pop: 30075, show: true},
+{zip: 70808, pop: 32504, show: false},
+{zip: 70810, pop: 37980, show: false},
+{zip: 70714, pop: 19803, show: true},
+{zip: 70801, pop: 13, show: true},
+{zip: 70806, pop: 28706, show: true},
+{zip: 70807, pop: 20377, show: true},
+{zip: 70812, pop: 11206, show: true}
 ];
-var healthdistricts = [{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []},{tracts: [], pop: 0, datatotals: []}];
+var healthdistricts = [{tracts: [], pop: 0, datatotals: 0, tractcoords: []},{tracts: [], pop: 0, datatotals: 0, tractcoords: []},{tracts: [], pop: 0, datatotals: 0, tractcoords: []},{tracts: [], pop: 0, datatotals: 0, tractcoords: []},{tracts: [], pop: 0, datatotals: 0, tractcoords: []},{tracts: [], pop: 0, datatotals: 0, tractcoords: []},{tracts: [], pop: 0, datatotals: 0, tractcoords: []}];
 var healthdistrictspop = [0,0,0,0,0,0,0];
 var colors = [
 	"#00ffff",
@@ -135,20 +142,45 @@ colors2 = [
 					
 
 function initMap (){
-/* 	$.ajax({
-		type: 'GET',
-		url: 'https://raw.githubusercontent.com/Cadetho/ProviderMapping/1542e9dfac4e095d79379c6f1d810f7d068e53c8/provdataNPI.json',
-		dataType: 'text',
-		error: function(xhr, status, error) { 
-		},
-		success: function(data){
-		
-			var npidata = JSON.parse(data);
-			
-			console.log(data);
+		var bodyEl = $('body');
+		var content = $( '.content_wrap' );
+		var openbtn = $( '#open-button' );
+		closebtn = $( '#close-button' );
+		var isOpen = false;
+
+	function init() {
+		initEvents();
+	}
+
+	function initEvents() {
+		openbtn.on( 'click', toggleMenu );
+		if( closebtn ) {
+			closebtn.on( 'click', toggleMenu );
 		}
-	}) */
-	
+		content.on( 'click', function(ev) {
+			var target = ev.target;
+			if( isOpen && target !== openbtn ) {
+				toggleMenu();
+			}
+		} );
+	}
+
+	function toggleMenu() {
+		console.log(isOpen);
+		if( isOpen ) {
+			bodyEl.removeClass('show-menu');
+			$('div.menu-wrap').css("z-index","-1");
+		}
+		else {
+			bodyEl.addClass('show-menu');
+			$('div.menu-wrap').css("z-index","999");
+			
+		}
+		isOpen = !isOpen;
+	}
+
+	init();
+
 	google.maps.visualRefresh = true;
     var mapDiv = document.getElementById('googlemap');
     map = new google.maps.Map(mapDiv, {
@@ -156,6 +188,7 @@ function initMap (){
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend'));
 
@@ -169,19 +202,175 @@ function initMap (){
 	
 	var myzipparser = new geoXML3.parser({
 		map: map,
-		afterParse: useZipData
+		afterParse: useZipData,
+		visible: false
 	});
 	myzipparser.parse('https://raw.githubusercontent.com/Cadetho/ProviderMapping/f11763656d79e2d60da5c1deb860e5c5f8cb4c16/Baton-Rouge-60506.kml');
-
+	
+	$.ajax({
+		type: 'GET',
+		url: 'https://data.brla.gov/resource/4gku-4cqw.json',
+		dataType: 'json',
+		success: function(results){
+			makeSchoolMarkers(results);
+		}
+	});
+	
+	$.ajax({
+		type: 'GET',
+		url: 'https://data.brla.gov/resource/5hk4-9kj5.json',
+		dataType: 'json',
+		success: function(results){
+			makeParkMarkers(results);
+		}
+	});
+	$('#checkbox-fill').checkboxradio();
+	$('#checkbox-fill').prop("checked", false);
+	$('#checkbox-fill').button("refresh");
+	
+	$('#checkbox-fill').on('click', handleFillToggle);
 }
 
+function handleFillToggle(e){
+	var currentselection = "";
+	if($('#checkbox-tractradio').prop("checked")){currentselection="tracts";
+	}else if($('#checkbox-districts').prop("checked")){currentselection="districts";
+	}else if($('#checkbox-zips').prop("checked")){currentselection="zips";}
+	var bool = $('#checkbox-fill').prop('checked');
+	if(bool){
+		if(currentselection==="districts") { setDistrictFill(); }
+		else if(currentselection==="tracts") { setTractFill(); }
+		else if(currentselection==="zips") { setZipFill(); }
+	} else {
+		if(currentselection==="districts") {
+			for(i=0;i<healthdistricts.length;i++){
+				for(a=0;a<healthdistricts[i].tracts.length;a++){
+					healthdistricts[i].tracts[a].tract.setOptions({'fillOpacity':'0'});
+				}
+			}
+		}
+		else if(currentselection==="tracts") { 
+			for(i=0;i<tracts.length;i++){
+				tracts[i].tract.setOptions({'fillOpacity':'0'});
+			}
+		}
+		else if(currentselection==="zips") { 
+			for(i=0;i<zips.length;i++){
+				zips[i].poly.setOptions({'fillOpacity':'0'});
+			}
+		}
+	}
+}
+function makeParkMarkers(data){
+	var infowindow,marker;
+	var icon = {
+    url: "images/brec_logo.png", 
+    scaledSize: new google.maps.Size(20, 20), 
+    origin: new google.maps.Point(0,0), 
+    anchor: new google.maps.Point(0, 0) 
+	};
+	
+	for(i=0;i<data.length;i++){
+		var content = "<div class='geoxml3_infowindow'><h3>"+data[i].park_name+"</h3></div>"
+		infowindoww = new google.maps.InfoWindow();
+		markerr = new google.maps.Marker({
+				position: {lat: parseFloat(data[i].geolocation.latitude), lng: parseFloat(data[i].geolocation.longitude)},
+				map: map,
+				icon: icon,
+				title: data[i].name,
+				visible: false
+			});
+			
+		parklist.push({marker: markerr, infowindow: infowindoww, name: data[i].name});
+		google.maps.event.addListener(markerr, 'click', (function(marker, content, infowindow){
+			return function(){
+				if(openinfo == null){
+					openinfo = infowindow;
+				} else {
+					openinfo.close();
+					openinfo = infowindow;
+				}
+				infowindow.setContent(content);
+				infowindow.open(map,marker);
+			};
+		})(markerr,content, infowindoww));
+	}
+	$('#checkbox-parkmarker').checkboxradio();
+	$('#checkbox-parkmarker').prop("checked", false);
+	$('#checkbox-parkmarker').button('refresh');
+	
+	$('#checkbox-parkmarker').on('change', handleParkToggle);
+}
+
+function handleParkToggle(){
+	var toggle = $('#checkbox-parkmarker').prop("checked");
+	for(i=0;i<parklist.length;i++){
+		parklist[i].marker.setVisible(toggle);
+	}
+}
+function makeSchoolMarkers(data){
+	var infowindow,marker;
+	var icon = {
+    url: "images/school_logo.png", 
+    scaledSize: new google.maps.Size(20, 20), 
+    origin: new google.maps.Point(0,0), 
+    anchor: new google.maps.Point(0, 0) 
+	};
+
+	for(i=0;i<data.length;i++){
+		if(data[i].open_closed==="O"&& !(typeof(data[i].geolocation) === "undefined")){
+			var content = "<div class='geoxml3_infowindow'><h3>"+data[i].name+"</h3></div>"
+			infowindoww = new google.maps.InfoWindow();
+			markerr = new google.maps.Marker({
+					position: {lat: parseFloat(data[i].geolocation.coordinates[1]), lng: parseFloat(data[i].geolocation.coordinates[0])},
+					map: map,
+					icon: icon,
+					title: data[i].name,
+					visible: false
+				});
+				
+				schoollist.push({marker: markerr, infowindow: infowindoww, name: data[i].name});
+				google.maps.event.addListener(markerr, 'click', (function(marker, content, infowindow){
+					return function(){
+						if(openinfo == null){
+							openinfo = infowindow;
+						} else {
+							openinfo.close();
+							openinfo = infowindow;
+						}
+						infowindow.setContent(content);
+						infowindow.open(map,marker);
+					};
+				})(markerr,content, infowindoww));
+			
+		}
+	}
+	$('#checkbox-schoolmarker').checkboxradio();
+	$('#checkbox-schoolmarker').prop("checked", false);
+	$('#checkbox-schoolmarker').button('refresh');
+	
+	$('#checkbox-schoolmarker').on('change', handleSchoolToggle);
+}
+function handleSchoolToggle(){
+	var toggle = $('#checkbox-schoolmarker').prop("checked");
+	for(i=0;i<schoollist.length;i++){
+		schoollist[i].marker.setVisible(toggle);
+	}
+}
 function useZipData(data){
 	for(var i=0;i<data[0].gpolygons.length;i++){
-		data[0].gpolygons[i].infoWindow.setContent(ziplist[i]+"");
-		data[0].gpolygons[i].infoWindowOptions.content = ziplist[i]+"";
-		zips.push({poly: data[0].gpolygons[i], facilities: [], providers: []});
+		if(ziplist[i].show){
+		content = "<div class=geoxml3_infowindow><h3>"+ziplist[i].zip+"</h3></br><h3>Population: "+ziplist[i].pop+"</h3></br>";
+		data[0].gpolygons[i].infoWindow.setContent(content);
+		data[0].gpolygons[i].infoWindowOptions.content = content;
+		data[0].gpolygons[i].setOptions({"fillOpacity":"0.49609375","strokeWeight":"2", "strokeOpacity":"0.99609375"});
+		zips.push({poly: data[0].gpolygons[i], facilities: [], providers: [], pop: ziplist[i].pop});
+		} else {
+		data[0].gpolygons[i].setVisible(false);
+		}
 	}
-	
+	zipbool = true;
+	createMasterProvList();
 }
 function useProvCSVData(data){
 	var provdatalist=data[0].split(',');
@@ -232,8 +421,8 @@ function useProvCSVData(data){
 			};
 		})(provdata[i].marker, content, provdata[i].infowindow));
 		} */
-
-		createMasterProvList("prov");
+		provbool = true;
+		createMasterProvList();
 }
 function handleProvMarkerToggle(){
 	var bool = $('#checkbox-provmarker').prop('checked')
@@ -247,6 +436,7 @@ function handleProvMarkerToggle(){
 
 function useCSVData(data){
 	data.pop();
+
 	for(i=0;i<data.length;i++){
 		data[i]=data[i].split(',');
 	}
@@ -258,35 +448,34 @@ function useCSVData(data){
 		}
 	}
 	csvdata = data;
+	console.log(datalist);
 	for(i=0;i<data.length;i++){
-		if(data[i][2]<=7){
+		var distno = data[i][2];
+		if(distno<=7){
 			var index = null;
 			for(a=0;a<tracts.length;a++){
 				if(tracts[a].tract.title === data[i][0]){
 					index = a;
+					tracts[a].pop=data[i][3];
+					tracts[a].data = data[i];
 				}
 			}
-			healthdistricts[data[i][2]-1].tracts.push(tracts[index].tract);
-			healthdistricts[data[i][2]-1].pop = healthdistricts[data[i][2]-1].pop + parseInt(data[i][3]);
-			for(var j=4;j< data[i].length ;j++){
-				if(healthdistricts[data[i][2]-1].datatotals[j]==='undefined'){
-					if(datalist[j-4].indexOf("%")!=-1){
-						healthdistricts[data[i][2]-1].datatotals.push(parseInt(data[i][j]));
-					} else {
-						healthdistricts[data[i][2]-1].datatotals.push((parseInt(data[i][j])/100)*parseInt(data[i][3]));
-					}
-				} else {
-					if(datalist[j-4].indexOf("%")!=-1){
-						healthdistricts[data[i][2]-1].datatotals[j]=healthdistricts[data[i][2]-1].datatotals[j]+parseInt(data[i][j]);
-					} else {
-						healthdistricts[data[i][2]-1].datatotals[j]=healthdistricts[data[i][2]-1].datatotals[j]+parseInt((parseInt(data[i][j])/100)*parseInt(data[i][3]));
-					}
-				}
+			healthdistricts[distno-1].tracts.push(tracts[index]);
+			healthdistricts[distno-1].pop = healthdistricts[distno-1].pop + parseInt(data[i][3]);
+		}
+	}
+	for(i=0;i<tracts.length;i++){
+		for(a=0;a<tracts[i].data;a++){
+			if(datalist[a].indexOf("%")!=-1){
+				tracts[i].data[a]=(tracts[i].data[a]/100)*tracts[i].pop;
 			}
 		}
 	}
-	$("#checkbox-districts").prop("checked", false);
+
+	$("#checkbox-tractradio").prop("checked", true);
+
 	$("[name='area']").on("change", handleDistrictToggle);
+	$("div#district-box > input").checkboxradio();
 	$('#district-box').show();
 	createCSVDataControls();
 }
@@ -299,6 +488,7 @@ function createCSVDataControls(){
 	for(var i=4;i<datalist.length+3;i++){
 		csvpanel.append("<label for='radio-"+ i +"'>"+datalist[i-3]+"</label><input type='radio'  class='toggle_csv' name='radiocsv' id='radio-"+i+"' value='"+i+"' > ");
 	}
+
 	$("[name='radiocsv']").on("change", handleCSVToggle );
 	$('#csv > li > .input').checkboxradio();
 	$('div#accordion2').controlgroup( {
@@ -310,12 +500,26 @@ function createCSVDataControls(){
 function handleCSVToggle( e ){
 	var index = e.target.value;
 	var districtbool = $('#checkbox-districts').prop('checked');
+	if($('#checbox-zips').prop('checked')){
+		$('#checkbox-tracts').prop('checked', true);
+		$('#checbox-zips').prop('checked', false);
+	}
+	
+	
+
 	var colorarr = [];
 	if(districtbool){
-		for(i=0;i<healthdistricts.length;i++){
-			colorarr.push(healthdistricts.datatotals[i]/healthdistricts.pop);
-		}
-		setDistrictFill(colorarr);
+			for(i=0;i<healthdistricts.length;i++){
+				healthdistricts[i].datatotals=0;
+				for(a=0;a<healthdistricts[i].tracts.length;a++){
+					healthdistricts[i].datatotals = healthdistricts[i].datatotals+healthdistricts[i].tracts[a].data[index];
+				}
+			}
+			console.log(healthdistricts);
+			for(i=0;i<healthdistricts.length;i++){
+				colorarr.push(healthdistricts[i].datatotals/healthdistricts[i].pop);
+			}
+			console.log(colorarr);
 	} else {
 		if(datalist[index].indexOf("%")==-1){
 			for(i=0;i<csvdata.length;i++){
@@ -327,23 +531,45 @@ function handleCSVToggle( e ){
 			}
 		}
 	}
-
+	console.log(tracts);
+	for(i=0;i<tracts.length;i++){
+		tracts[i].tract.infoWindow.setContent("<div id=geoxml3_infowindow><h3>Tract "+tracts[i].tract.title + "</h3><br/>Total Population: "+tracts[i].pop+"<br/>"+datalist[index]+": "+tracts[i].data[index]+"</div>");
+		tracts[i].tract.infoWindowOptions.content="<div id=geoxml3_infowindow><h3>Tract "+tracts[i].tract.title + "</h3><br/>Total Population: "+tracts[i].pop+"<br/>"+datalist[index]+": "+tracts[i].data[index]+"</div>";
+	}
 	var max = Math.max.apply(null, colorarr);
+	var min = Math.min.apply(null, colorarr);
 	for(i=0;i<colorarr.length;i++){
-		colorarr[i]=colorarr[i]/max;
+		colorarr[i]=(colorarr[i]-min)/max;
 		colorarr[i]=getRangeColor(colorarr[i]);
-		colorarr[i]="hsl("+colorarr[i].hue + ","+colorarr[i].sat+"%,"+colorarr[i].light+"%)";
 	}
 
 	if(districtbool){
-		setDistrictFill(colorarr);
+		setCSVDistrictFill(colorarr);
 	} else {
-		setTractFill(colorarr);
+		setCSVTractFill(colorarr);
 	}
-	/* for(z=0;z<colorarr.length;z++){
-		colorarr[z]=getRangeColor(colorarr[z]);
-	} */
 	
+}
+function setCSVDistrictFill(colorarr){
+	for(a=0;a<zips.length;a++){
+		zips[a].poly.setVisible(false);
+	}
+	for(i=0;i<healthdistricts.length;i++){
+		for(a=0;a<healthdistricts[i].tracts.length;a++){
+			healthdistricts[i].tracts[a].tract.setVisible(true);
+			healthdistricts[i].tracts[a].tract.setOptions({fillColor: colorarr[i]});
+		}
+	}
+}
+function setCSVTractFill(colorarr){
+	for(a=0;a<zips.length;a++){
+		zips[a].poly.setVisible(false);
+	}
+	
+	for(i=0;i<tracts.length;i++){
+		tracts[i].tract.setVisible(true);
+		tracts[i].tract.setOptions({fillColor: colorarr[i]});
+	}
 }
 function useTheData(doc){
 	for(var i=0;i<doc[0].gpolygons.length;i++){
@@ -416,23 +642,27 @@ function usemedicaredata(data){
 	}
 	medicaredata.pop();
 	medicaredata.shift();
-	createMasterProvList("med");
+	medbool = true;
+	createMasterProvList();
 }
 var booleanstr = null;
 function createMasterProvList(boolstr){
-	if((booleanstr==="prov"&&boolstr==="med")||(booleanstr==="med"&&boolstr==="prov")){
+	if(zipbool && provbool && medbool){
 	var pos = 0;
 	var meddatatemp = medicaredata;
 	var provdatatemp = provdata;
 
 	while(true){
+		
 		if(pos<meddatatemp.length){
 		var tempnpi = meddatatemp[pos][0];
+		
 		var index = provdatatemp.findIndex(x => x.npi === tempnpi);
 		if(index != -1){
 			masterprovlist.push(provdatatemp[index]);
 			meddatatemp.splice(pos,1);
 			provdatatemp.splice(index, 1);
+			pos--;
 		} 
 		pos++;
 		} else {
@@ -444,29 +674,39 @@ function createMasterProvList(boolstr){
 	for(i=0;i<meddatatemp.length;i++){
 		meddatatemp[i]=({fname: meddatatemp[i][2], lname: meddatatemp[i][1], npi: meddatatemp[i][0], lat: meddatatemp[i][11], lng: meddatatemp[i][12], infowindow: null, marker: null});
 	}
-	console.log(meddatatemp);
 	masterprovlist.push.apply(masterprovlist, meddatatemp);
 	placeMasterListMarkers();
-	} else {
-		booleanstr = boolstr;
 	}
 }
 function placeMasterListMarkers(){
+	var icon = {
+    url: "images/doctor_logo.png", 
+    scaledSize: new google.maps.Size(20, 20), 
+    origin: new google.maps.Point(0,0), 
+    anchor: new google.maps.Point(0, 0) 
+	};
 	for(i=0;i<masterprovlist.length;i++){
+		var lngg = masterprovlist[i].lng;
+		var latt = masterprovlist[i].lat;
+		var pos = new google.maps.LatLng(latt, lngg);
 		for(z=0;z<tracts.length;z++){
-			var lngg = masterprovlist[i].lng;
-			var latt = masterprovlist[i].lat;
-			var pos = new google.maps.LatLng(latt, lngg);
 			var bool = google.maps.geometry.poly.containsLocation(pos, tracts[z].tract);
 			if(bool){
 				tracts[z].providers.push(masterprovlist[i]);
 			}
 		}
+		for(a=0;a<zips.length;a++){
+			bool = google.maps.geometry.poly.containsLocation(pos, zips[a].poly);
+			if(bool){
+				zips[a].providers.push(masterprovlist[i]);
+			}
+		}
 		var content = "<div class='info_content'><table><tr><td>Name</td><td>"+masterprovlist[i].fname + " " + masterprovlist[i].lname + "</td></tr><tr><td>NPI</td><td>"+masterprovlist[i].npi+"</td></tr></table></div>";
 		masterprovlist[i].infowindow = new google.maps.InfoWindow();
 		masterprovlist[i].marker = new google.maps.Marker({
-			position: {lat: parseFloat(masterprovlist[i].lat), lng: parseFloat(masterprovlist[i].lng)},
+			position: {lat: parseFloat(latt), lng: parseFloat(lngg)},
 			map: map,
+			icon: icon,
 			title: masterprovlist[i].fname + " " + masterprovlist[i].lname,
 			visible: false
 		});
@@ -483,16 +723,39 @@ function placeMasterListMarkers(){
 			};
 		})(masterprovlist[i].marker, content, masterprovlist[i].infowindow));
 	}
-	console.log(tracts);
+	
+	for(i=0;i<tracts.length;i++){
+		
+		var concatstr = "";
+		content = "<div class='geoxml3_infowindow'><table><tr><td>Tract</td><td>"+tracts[i].tract.title+"</td></tr><tr><td>Population</td><td>"+tracts[i].pop+"</td></tr><tr><td>Provider Count</td><td>"+tracts[i].providers.length+"</td></tr><tr>Provider List</tr>"
+		for(z=0;z<tracts[i].providers.length;z++){
+			content += "<tr><td>"+tracts[i].providers[z].fname+"</td><td>"+tracts[i].providers[z].lname+"</td></tr>";
+		}
+		content += "</table></div>";
+		tracts[i].tract.infoWindow.setContent(content);
+		tracts[i].tract.infoWindowOptions.content = content;
+	}
+	
+	var colorarr = [];
+	for(i=0;i<tracts.length;i++){
+		var ratiopop = tracts[i].pop/1750;
+		var ratio = tracts[i].providers.length/ratiopop;
+		if(ratio>1){ ratio = 1; }
+		colorarr.push(getRangeColor(ratio));
+	}
+	setTractFill();
+	$('#checkbox-provmarker').checkboxradio();
 	$('#checkbox-provmarker').prop('checked', false);
+	$('#checkbox-provmarker').button("refresh");
+
 	$('#checkbox-provmarker').on('click', handleProvMarkerToggle);
 }
 function getRangeColor(percent){
-	var h = percent*180; //hue
+	var h = percent*130; //hue
 	var s = 90;  //saturation
 	var l = 50; //lightness
 	
-	return {hue: h, sat: s, light: l};
+	return "hsl("+h + ","+s+"%,"+l+"%)";
 
 }
 function createControlPanel(){
@@ -507,77 +770,119 @@ function createControlPanel(){
 		$('#checkbox'+routes[i].line_num).prop('checked', false);
 	}
 	//$('input').checkboxradio();
+	$(".toggle").checkboxradio();
+
 	$(".toggle").on("change", handleToggle );
 }
 $(function () {
-	$("div#accordion").on('click', function(){
+	function accord(){
 		$(this).toggleClass("is-active");
 		if($(this).hasClass('is-active')){
 			$('#accordion').height($('div#accordion > ul.dropdown-list').height() + $('#accordion').height());
 		}else{
 			$('#accordion').height(accordheight);
 		}
-	}).children('input').on('click', function (e){
+	}
+
+
+	
+	$("div#accordion").on('click', accord).children('input').on('click', function (e){
 		e.stopPropagation()
 	});
 	$("div#accordion ul").click(function (e) {
 		e.stopPropagation();
 	});
-	
-	$("div#accordion2").on('click', function(){
+	function accord2(){
 		$(this).toggleClass("is-active");
 		if($(this).hasClass('is-active')){
 			$('#accordion2').height($('div#accordion2 > ul.dropdown-list').height() + $('#accordion2').height());
 		}else{
 			$('#accordion2').height(accordheight);
 		}
-	}).children('input').on('click', function (e){
+	}
+
+	$("div#accordion2").on('click', accord2).children('input').on('click', function (e){
 		e.stopPropagation()
 	});
 	$("div#accordion2 ul").click(function (e) {
 		e.stopPropagation();
 	});
+	$("#checkbox-buses").checkboxradio();
 	$("#checkbox-buses").prop('checked', false);
+	$("#checkbox-buses").button("refresh");
+
 	$("#checkbox-buses").on("click", handleBusToggle);
+	
+	
+});
+
+$(window).on("load", function(){
 	
 	
 });
 function handleDistrictToggle( e ){
 	var target = e.target.title;
 	if(target === "districts"){
-		setDistrictFill(colors);
+		setDistrictFill();
 	} else if(target ==="tracts") {
-		setTractFill(colors);
+		setTractFill();
 	} else if(target === "zips"){
-		setZipFill(colors);
+	
+		setZipFill();
 	}
 }
 
-function setZipFill(colorfill){
+function setZipFill(){
+	var colorfill = [];
+	for(i=0;i<zips.length;i++){
+		var ratiopop = zips[i].pop/1750;
+		var ratio = zips[i].providers.length/ratiopop;
+		if(ratio>1){ ratio = 1; }
+		colorfill.push(getRangeColor(ratio));
+	}
 	for(i=0;i<tracts.length;i++){
 		tracts[i].tract.setVisible(false);
 	}
 	for(a=0;a<zips.length;a++){
 		zips[a].poly.setVisible(true);
+		zips[a].poly.setOptions({fillColor:colorfill[a], opacity: 1, fillOpacity: "0.49609375"});
 	}
 }
 function setTractFill(colorfill){
+	var colorfill=[];
+	for(i=0;i<tracts.length;i++){
+		var ratiopop = tracts[i].pop/1750;
+		var ratio = tracts[i].providers.length/ratiopop;
+		if(ratio>1){ ratio = 1; }
+		colorfill.push(getRangeColor(ratio));
+	}
 	for(a=0;a<zips.length;a++){
 		zips[a].poly.setVisible(false);
 	}
 	for(i=0;i<tracts.length;i++){
 		tracts[i].tract.setVisible(true);
-		tracts[i].tract.setOptions({fillColor:colorfill[i], strokeWeight:'2'});
+		tracts[i].tract.setOptions({fillColor:colorfill[i], strokeWeight:'2', fillOpacity: "0.49609375"});
 	}
 }
-function setDistrictFill(colorfill){
+function setDistrictFill(){
+	var colorfill = [];
+		for(i=0;i<healthdistricts.length;i++){
+			var ratiopop = healthdistricts[i].pop/1750;
+			var ratio = 0;
+			for(a=0;a<healthdistricts[i].tracts.length;a++){
+				ratio += healthdistricts[i].tracts[a].providers.length;
+			}
+			ratio = ratio/ratiopop;
+			if(ratio>1){ratio = 1;}
+			colorfill.push(getRangeColor(ratio));
+	}
 	for(a=0;a<zips.length;a++){
 		zips[a].poly.setVisible(false);
 	}
 	for(i=0;i<healthdistricts.length;i++){
 		for(a=0;a<healthdistricts[i].tracts.length;a++){
-			healthdistricts[i].tracts[a].setVisible(true);
-			healthdistricts[i].tracts[a].setOptions({fillColor: colorfill[i], strokeWeight: '0'});
+			healthdistricts[i].tracts[a].tract.setVisible(true);
+			healthdistricts[i].tracts[a].tract.setOptions({fillColor: colorfill[i], strokeWeight: '1', fillOpacity: "0.49609375", strokeColor: colors[i+7]});
 		}
 	}
 }

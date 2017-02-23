@@ -7,33 +7,55 @@
 		<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="jquery-ui.theme.min.css">
 		<link rel="stylesheet" type="text/css" href="busroutes.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css" />
 		<script src="jquery-3.1.1.min.js"></script>
 		<script src="jquery-ui.min.js"></script>
 		<script src="geoxml3.js"></script>
 		<script src="busroutes.js"></script>
 	</head>
 	<body>
-		<div id="controlpanel">
-			<div id="accordion" class="accordion">
-					<label for="busroute">Bus Routes</label><input type="checkbox" class="toggle_buses is_selected" id="checkbox-buses" checked='false'></input>
+		<div class="menu-wrap">
+			<div id="controlpanel" class="menu">
+				<div id="district-box" hidden class="nav_element">
+					<label for="checkbox-tractradio">Tracts</label><input title="tracts" name="area" type="radio" class="toggle_tractsradio" id="checkbox-tractradio" checked="false"></input>
+					<label for="checkbox-districts">Districts</label><input title="districts" name="area"type="radio" class="toggle_district" id="checkbox-districts" checked='false'></input>
+					<label for="checkbox-zips">ZIP Codes</label><input title="zips" name="area"type="radio" class="toggle_zips" id="checkbox-zips" checked='false'></input>
+				</div>
+				
+				<div id="fill-box" class="nav_element">
+					<label for="checkbox-fill">Show Fill</label><input type="checkbox" class="toggle_fill" id="checkbox-fill" checked='false'></input>
+				</div>
+				<div id="accordion" class="accordion" class="nav_element">
+						<label for="checkbox-buses">Bus Routes</label><input type="checkbox" class="toggle_buses is_selected" id="checkbox-buses" checked='false'></input>
+						<ul class="dropdown-list">
+						</ul>
+				</div>
+				<div id="provmarker-box" class="nav_element">
+					<label for="checkbox-provmarker">Show Providers</label><input type="checkbox" class="toggle_provmarkers" id="checkbox-provmarker" checked='false'></input>
+				</div>
+				<div id="schoolmarker-box" class="nav_element">
+					<label for="checkbox-schoolmarker">Show Schools</label><input type="checkbox" class="toggle_schoolmarkers" id="checkbox-schoolmarker" checked='false'></input>
+				</div>
+				<div id="parkmarker-box" class="nav_element">
+					<label for="checkbox-parkmarker">Show Parks</label><input type="checkbox" class="toggle_parkmarkers" id="checkbox-parkmarker" checked='false'></input>
+				</div>
+				<div id="accordion2" class="nav_element accordion">
+					<legend>Together BR Data</legend>
 					<ul class="dropdown-list">
 					</ul>
-			</div>
-			<div id="district-box" hidden>
-				<label for="tracts">Tracts</label><input title="tracts" name="area" type="radio" class="toggle_tractsradio" id="checkbox-tractradio" checked="false"></input>
-				<label for="districts">Districts</label><input title="districts" name="area"type="radio" class="toggle_district" id="checkbox-districts" checked='false'></input>
-				<label for="zipz">ZIP Codes</label><input title="zips" name="area"type="radio" class="toggle_zips" id="checkbox-zips" checked='false'></input>
-			</div>
-			<div id="accordion2" class="accordion">
-				<legend>CSV Data</legend>
-				<ul class="dropdown-list">
-				</ul>
-			</div>
-			<div id="provmarker-box">
-				<label for="provmarker">Show Provider Markers</label><input type="checkbox" class="toggle_provmarkers" id="checkbox-provmarker" checked='false'></input>
+				</div>
 			</div>
 		</div>
-		<div id="googlemap">
+		<button class="menu-button" id="open-button"><i class="fa fa-fw fa-cog"></i><span>Open Menu</span></button>
+		<div  class="content_wrap">
+			<div class="content">
+				<div id="googlemap">
+				</div>
+				<div id="legend" hidden>
+					<h4>Legend</h4>
+					<div id="legend_content"></div>
+				</div>
+			</div>
 		</div>
 	</body>
 	
